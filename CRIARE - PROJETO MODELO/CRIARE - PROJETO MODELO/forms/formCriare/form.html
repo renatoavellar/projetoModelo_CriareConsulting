@@ -1,0 +1,367 @@
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="/style-guide/css/fluig-style-guide.min.css"/>
+		<script type="text/javascript" src="/portal/resources/js/jquery/jquery.js"></script>
+		<script type="text/javascript" src="/portal/resources/js/jquery/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="/portal/resources/js/mustache/mustache-min.js"></script>
+		<script type="text/javascript" src="/style-guide/js/fluig-style-guide.min.js" charset="utf-8"></script>
+		<script src="/webdesk/vcXMLRPC.js"></script>
+		<link type="text/css" rel="stylesheet" href="style.css"/>
+		<script type="text/javascript" src="attach.js" charset="utf-8"></script>
+		<script type="text/javascript" src="main.js" charset="utf-8"></script>
+		<script type="text/javascript" src="funcoesUteis.js" charset="utf-8"></script>
+		<script type="text/javascript" src="validator.js" charset="utf-8"></script>
+	</head>
+	<body class="fluig-style-guide">
+		<div class="fluig-style-guide col-md-12">
+			<form name="form" role="form">
+				<!-- [Inicio] campos de controle -->
+				<input type="hidden" id="numeroFluxo" name="numeroFluxo" value="" />
+				<input type="hidden" id="solicitanteMatricula" name="solicitanteMatricula" value="" />
+				<input type="hidden" id="solicitanteNome" name="solicitanteNome" value="" />
+				<input type="hidden" id="solicitanteEmail" name="solicitanteEmail" value="" />
+				<input type="hidden" id="solicitanteDepartamento" name="solicitanteDepartamento" value="" />
+				<input type="hidden" id="dataInicio" name="dataInicio" value="" />
+				<input type="hidden" id="dataFinalizacao" name="dataFinalizacao" value="" />
+				<input type="hidden" id="situacao" name="situacao" value="" />
+				<input type="hidden" id="atividadeAtual" name="atividadeAtual" value="" />
+				<input type="hidden" id="currentNome" name="currentNome" value="" />
+				<input type="hidden" id="currentEmail" name="currentEmail" value="" />
+				<input type="hidden" id="currentLogin" name="currentLogin" value="" />
+				<input type="hidden" id="currentMatricula" name="currentMatricula" value="" />
+				<input type="hidden" id="campoDescritor" name="campoDescritor" value="" />
+				<!-- [Fim] campos de controle -->
+				
+				<div class="page-header">
+					<h1 class="panel-title labelSolic"><span class="fluigicon fluigicon-process-decision icon-md"></span>&nbsp;TITULO DO PROCESSO</h1>
+				</div>
+				<div>
+					<div  id="PanelDadosUser"></div>
+				</div>
+				<div class="panel-group">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h2 class="panel-title">
+								<a class="collapse-icon up titulo-panel" style="text-decoration: none;" data-toggle="collapse">
+								<span class="flaticon flaticon-desktop-list icon-sm"></span>&nbsp;Dados da Solicitação
+								</a>
+							</h2>
+						</div>
+						<div class="panel-body">
+							<legend> Dados </legend>
+							<div class="row">
+								<div class="form-group col-md-3">
+									<label class="control-label required" atividades="0,4" for="campoData">Data</label>
+									<input type="date" class="form-control" id="campoData" name="campoData" value="" />
+								</div>
+								<div class="form-group col-md-3">
+									<label class="control-label required" atividades="0,4" for="campoSelect">Select</label>
+									<select class="form-control" name="campoSelect" id="campoSelect">
+										<option value="">---- Selecione ----</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+									</select>
+								</div>
+								<div class="form-group col-md-6">
+									<input type="hidden" id="codZoom" name="codZoom" value="" />
+									<label class="control-label" for="campoZoom">Zoom</label>
+									<input type="zoom" class="form-control" id="campoZoom" name="campoZoom"
+										data-zoom="{
+												'displayKey': 'NOME_DISPLAY',
+												'datasetId': 'NOME_DATASET',
+												'filterValues': 'NOME_FILTRO,VALUE_FILTRO',
+												'fields': [
+												   	{
+													   'field': 'CAMPO',
+													   'label': 'NOME CAMPO',	
+													   'standard': 'true',					       
+													   'search': 'true'
+													}
+												]
+										}"/>
+								</div>
+							</div>
+							<div class="row">
+								<div class="form-group col-md-3">
+							       	<input type="hidden" id="switchCheck" name="switchBtnCheck" value="N" />
+							       	<label class="fs-display-block control-label" for="switchBtn">Switch</label>
+							        <input class="checkbox" type="checkbox" id="switchBtn" name="switchBtn" data-on-text="Sim" data-off-text="Não" data-on-color="warning" data-off-color="success" autofocus="autofocus">
+								</div>
+								<div class="form-group col-md-3">
+									<label class="control-label" for="campoMoeda">Valor</label>
+									<div class="input-group">
+									    <input type="text" name="campoMoeda" id="campoMoeda" class="form-control moeda" mask="##.###.###,00" maxlength="13" placeholder="0,00" value=""/>
+										<span class="input-group-addon">
+								   			<span class="flaticon flaticon-monetization-on icon-sm"></span>
+								   		</span>
+									</div>
+								</div>
+								<div class="form-group col-md-3">
+									<label class="control-label" for="campoTelefone">Telefone</label>
+									<div class="input-group">
+									    <input type="text" name="campoTelefone" id="campoTelefone" class="form-control telefone" onkeyup='mascara(this,phoneNumber)' onblur='mascara(this,phoneNumber)' maxlength="15" placeholder="(00) 00000-0000" value=""/>
+										<span class="input-group-addon">
+								   			<span class="flaticon flaticon-phone icon-sm"></span>
+								   		</span>
+									</div>
+								</div>
+								<div class="form-group col-md-3">
+									<label class="control-label" for="campoCPFCNPJ">CPF / CNPJ</label>
+									<div class="input-group">
+									    <input type="text" name="campoCPFCNPJ" id="campoCPFCNPJ" class="form-control cpfCnpj" onkeyup='mascara(this,cpfCnpj)' onblur='mascara(this,cpfCnpj);' maxlength="18" placeholder="Insira o CPF / CNPJ" value=""/>
+										<span class="input-group-addon">
+								   			<span class="flaticon flaticon-digital icon-sm"></span>
+								   		</span>
+									</div>
+								</div>
+							</div>
+							
+							<legend> Endereço </legend>
+							<div class="row">
+								<div class="form-group col-md-2">
+									<label class="control-label required" atividades="0,4" for="cep">CEP</label>
+									<div class="input-group">
+										<input type="text" class="form-control" id="cep" name="cep" mask="00000-000"/>
+										<span class="input-group-addon">
+											<span class="flaticon flaticon-pin-map icon-sm"></span>
+										</span>
+									</div>
+								</div>
+								<div class="form-group col-md-8">
+									<label class="control-label required" atividades="0,4" for="logradouro">Logradouro</label>
+									<input type="text" class="form-control" id="logradouro" name="logradouro"/>
+								</div>
+								<div class="form-group col-md-2">
+									<label class="control-label required" atividades="0,4" for="numEndereco">Número</label>
+									<input type="text" class="form-control" id="numEndereco" name="numEndereco"/>
+								</div>
+							</div>
+							<div class="row">
+								<div class="form-group col-md-4">
+									<label class="control-label" for="complementoEnd">Complemento</label>
+									<input type="text" class="form-control" id="complementoEnd" name="complementoEnd"/>
+								</div>
+								<div class="form-group col-md-4">
+									<label class="control-label required" atividades="0,4" for="bairro">Bairro</label>
+									<input type="text" class="form-control" id="bairro" name="bairro"/>
+								</div>
+								<div class="form-group col-md-3">
+									<label class="control-label required" atividades="0,4" for="nomeCidade">Cidade</label>
+									<input type="text" class="form-control" id="nomeCidade" name="nomeCidade"/>
+								</div>
+								<div class="form-group col-md-1">
+									<label class="control-label required" atividades="0,4" for="nomeUF">UF</label>
+									<input type="text" class="form-control" id="nomeUF" name="nomeUF" maxlength="2"/>
+								</div>
+							</div>
+							<div class="row">
+								<div class="form-group col-md-12">
+									<label for="campoTextArea">Text Area</label>
+									<div class="form-group">
+										<textarea class="form-control" name="campoTextArea" id="campoTextArea" rows="4" style="resize:vertical;" value=""></textarea>
+									</div>
+								</div>
+							</div>
+							<legend> Anexo </legend>
+							<div class="row">
+								<div class="form-group col-md-6" id="divAnexoDocumento">
+								    <label class="control-label" for="anexoDocumento">Anexo</label>
+							        <div class="input-group">
+							        	<input type="text" id="anexoDocumento" name="anexoDocumento" class="form-control anexo" placeholder="Selecione um arquivo" readonly="readonly" />
+										<input type="hidden" id="anexoDocumento_id" name="anexoDocumento_id" value="" />
+										<span class="input-group-addon fs-cursor-pointer btnAnexo" id="btnAnexo" title="Clique aqui para selecionar um arquivo" onclick="showCameraCustom(this.id, 'anexoDocumento', true);">
+		                                 	<span class="flaticon flaticon-upload"></span>
+		                                </span>
+										<span class="input-group-addon fs-cursor-pointer btnDownload" id="btnDownload" title="Download do Arquivo" onclick="downloadAnexo('anexoDocumento', true);">
+		                                 	<span class="fluigicon fluigicon-download"></span>
+		                                </span>
+		                                <span class="input-group-addon fs-cursor-pointer btnViewer" id="btnViewer" title="Visualizar Arquivo" onclick="viewerAnexo('anexoDocumento', true);">
+		                                 	<span class="fluigicon fluigicon-eye-open"></span>
+		                                </span>
+		                                <span class="input-group-addon fs-cursor-pointer btnDelete" id="btnDelete" title="Deletar Arquivo" onclick="deleteAnexo(this.id, 'anexoDocumento',  'btnViewer', 'btnDownload', 'btnAnexo');">
+		                                 	<span class="fluigicon fluigicon-remove icon" style="color:red;"></span>
+		                                </span>
+		                                <span class="input-group-addon">
+		                                	<span class="fluigicon fluigicon-paperclip"></span>
+		                                </span>
+									</div>
+								</div>
+							</div>
+							<legend> Itens </legend>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="table-responsive">
+										<table class="table table-bordered table-hover tabelaPaiFilho" tablename="tabelaItens" noaddbutton="true" nodeletebutton="true">
+											<thead>
+												<tr>
+													<th class="btnDELETE_tabelaItens" width="10%" style="background-color: e5e5e5;"></td>
+													<th width="30%">Descrição<span style="color: red">*</span></th>
+													<th width="10%">Qtd<span style="color: red">*</span></th>
+													<th width="15%">Valor Unitário<span style="color: red">*</span></th>
+													<th width="15%">Valor Total item</th>
+													<th width="20%">Observações</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="btnDELETE_tabelaItens">
+							                            <div class="control col-xs-12 fs-no-padding">
+							                                <button type="button" class="btn btn-default btn-sm calcularTotal" title="Excluir linha" onclick="Javascript:fnWdkRemoveChild(this);">
+							                                    <i class="fluigicon fluigicon-trash icon-sm"></i>
+							                                </button>
+							                            </div>
+							                        </td>
+							                        <td>
+														<input type="text" class="form-control" id="itemDescricao" name="itemDescricao" value=""/>
+													</td>
+													<td>
+														<input type="text" class="form-control calcularTotal" id="itemQtd" name="itemQtd" mask="0000" value=""/>
+													</td>
+													<td>
+														<input type="text" class="form-control calcularTotal" id="itemValorUnit" name="itemValorUnit" style="text-align: right;"  mask="#.###.###,00" maxlength="12" value=""/>
+													</td>
+													<td>
+														<input type="text" class="form-control" id="itemValorTotal" name="itemValorTotal" style="text-align: right;"  mask="#.###.###,00" maxlength="12" value="" readonly/>
+													</td>
+													<td>
+														<textarea class="form-control" name="itemObs" id="itemObs" rows="3" style="resize:vertical;" value=""></textarea>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<br/>
+									<div class="btnADD_tabelaItens">
+										<div class="form-group">
+											<button type="button" class="btn btn-primary" onclick="addChildTable('tabelaItens'); desabilitaCamposPaiFilho();">+</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-offset-9 col-md-3 align-right">
+								<div class="form-group">
+									<label class="control-label" for="valorTotal">Valor Total</label>
+									<div class="input-group">
+								   		<span class="input-group-addon">R$</span>
+									    <input type="text" name="valorTotal" id="valorTotal" class="form-control" placeholder="0,00" readonly>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>							
+					
+					<div class="panel panel-default" id="painelFaturamento" name="painelFaturamento">
+						<div class="panel-heading">
+							<h2 class="panel-title">
+								<a class="collapse-icon up titulo-panel" style="text-decoration: none;" data-toggle="collapse">
+									<span class="flaticon flaticon-monetization-on icon-sm"></span>&nbsp;Faturamento
+								</a>
+							</h2>
+						</div>
+						<div class="panel-body">
+							<div class="row">
+								<div class="form-group col-md-6">
+									<label class="control-label" for="responsavelAtividade">Responsável pela atividade</label>
+									<div class="input-group">
+										<input type="text" class="form-control" id="responsavelAtividade" name="responsavelAtividade" readonly />
+										<span class="input-group-addon">
+											<span class="fluigicon fluigicon-user"></span>
+										</span>
+									</div>
+								</div>
+								<div class="form-group col-md-3">
+				    				<label class="control-label" for="dataAssumiuAtividade">Data</label>
+				    				<div class="input-group">
+										<input type="text" class="form-control" id="dataAssumiuAtividade" name="dataAssumiuAtividade" value="" readonly/>
+										<span class="input-group-addon">
+							            	<span class="fluigicon fluigicon-calendar"></span>
+							        	</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h2 class="panel-title">
+								<a class="collapse-icon up titulo-panel" style="text-decoration: none;" data-toggle="collapse">
+									<span class="flaticon flaticon-message icon-sm"></span>&nbsp;Observações adicionais
+								</a>
+							</h2>
+						</div>
+						<div class="panel-body">
+							<div class="row">
+								<div class="form-group col-md-12">
+									<label for="origem">Observações:</label>&nbsp;<span class="fluigicon fluigicon-info-sign fluigicon-xs" data-toggle="tooltip" data-placement="top" title="Após preencher a OBSERVAÇÃO, clicar no botão ENVIAR."></span>
+									<div class="input-group">
+										<textarea class="form-control" name="origem" id="origem" style="height: 90px; resize:none;" value=""></textarea>
+										<span class="input-group-addon fs-cursor-pointer" id="preencheAcompanhamento" onclick="preencheAcompanhamento()" tabindex="0" onkeypress="preencheAcompanhamento()" onblur="preencheAcompanhamento()">
+											<span class="input-group-addon">
+												<span class="flaticon flaticon-message icon-md"></span>
+											</span>
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12 form-group">
+									<textarea class="form-control" name="destino1" id="destino1"
+										style="height: 200px; vertical-align: top; width: 100%; display:none;"
+										onKeyPress="alteraMaiusculo(this);" onkeyup="alteraMaiusculo(this);"
+										value="" readonly></textarea>
+									<div name="acompanhamento" id="acompanhamento" readonly></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form-group row invisible">
+						<div class="col-md-12">
+							<textarea class="form-control" name="destino" id="destino"	style="height: 200px; vertical-align: top; width: 100%; display:none;" value="" readonly></textarea>												
+						</div>
+					</div>
+					<page-footer>Desenvolvido por: Criare Consulting [λ]</page-footer>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
+<script type="text/template" class="alerta-zoom">
+	<div class="alert alert-warning zoom-alert" id="alert_template"><span>Selecione o campo <b>{{campo}}</b></span></div>
+</script>
+<script id="tpl-panel-user" type="text/template">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="panel panel-solicitante">
+				<div class="panel-heading">
+					<div class="row">
+						<table>
+							<tbody>
+								<tr>
+									<td class="color-grey" rowspan="7"> &nbsp; <i class="flaticon flaticon-account-circle icon-thumbnail-lg"></i> &nbsp; </td>
+								</tr>
+								<tr>
+									<td class="color-grey"> <b>Solicitação:</b> {{numeroFluxo}} </td>
+								</tr>
+								<tr>
+									<td class="color-grey"> <b>Data de abertura: </b> {{dataInicio}} </td>
+								</tr>
+								<tr>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+									<td class="color-grey"> <b>Solicitante:</b> {{nome}} </td>
+								</tr>
+								<tr>
+									<td class="color-grey"> <b>E-mail:</b> {{email}} </td>
+								</tr>
+								<tr>
+									<td class="color-grey"> <b>Departamento:</b> {{departamento}} </td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>

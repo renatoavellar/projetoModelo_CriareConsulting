@@ -1,0 +1,980 @@
+<list>
+  <ProcessDefinition>
+    <processDefinitionPK>
+      <companyId>1</companyId>
+      <processId>procModeloCriare</processId>
+    </processDefinitionPK>
+    <processDescription>Processo modelo Criare Consulting λ</processDescription>
+    <instruction></instruction>
+    <active>true</active>
+    <publicProcess>false</publicProcess>
+    <volumeId>Default</volumeId>
+    <categoryId>PROCESSO MODELO</categoryId>
+    <managerEngineAllocationId></managerEngineAllocationId>
+    <snapshotFrequency>0</snapshotFrequency>
+    <baseDay>0</baseDay>
+    <baseMonth>0</baseMonth>
+    <periodId>Default</periodId>
+    <uniqueCardVersion>false</uniqueCardVersion>
+    <keyWord></keyWord>
+    <complementsLevel>1</complementsLevel>
+    <notifyRequisitionerComplements>true</notifyRequisitionerComplements>
+    <notifyManagerComplements>false</notifyManagerComplements>
+    <deadlineTime>0</deadlineTime>
+    <warningDeadlineTime>0</warningDeadlineTime>
+    <notifyAuthorityComplements>true</notifyAuthorityComplements>
+  </ProcessDefinition>
+  <ProcessDefinitionVersion>
+    <processDefinitionVersionPK>
+      <companyId>1</companyId>
+      <processId>Processo modelo Criare Consulting λ</processId>
+      <version>4</version>
+    </processDefinitionVersionPK>
+    <versionDescription></versionDescription>
+    <formId>34</formId>
+    <editionMode>true</editionMode>
+    <updateAttachmentsVersion>false</updateAttachmentsVersion>
+    <controlsAttachmentsSecurity>false</controlsAttachmentsSecurity>
+    <active>true</active>
+    <blockedVersion>false</blockedVersion>
+    <counterSign>false</counterSign>
+    <openInstances>0</openInstances>
+    <bpmnVersion>2</bpmnVersion>
+    <processStates/>
+    <favorito>false</favorito>
+    <inheritFormSecurity>false</inheritFormSecurity>
+    <mobileReady>false</mobileReady>
+  </ProcessDefinitionVersion>
+  <list>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>procModeloCriare</processId>
+        <version>1</version>
+        <sequence>4</sequence>
+      </processStatePK>
+      <stateName>Início</stateName>
+      <stateDescription>Início</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>true</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>false</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>150</positionX>
+      <positionY>82</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>10</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>procModeloCriare</processId>
+        <version>1</version>
+        <sequence>5</sequence>
+      </processStatePK>
+      <stateName>Atividade</stateName>
+      <stateDescription>Atividade</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>260</positionX>
+      <positionY>218</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>procModeloCriare</processId>
+        <version>1</version>
+        <sequence>14</sequence>
+      </processStatePK>
+      <stateName>Realizar integração</stateName>
+      <stateDescription>Realizar integração</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>false</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>0</allowanceAuthorityTime>
+      <frequenceAuthorityTime>0</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>480</positionX>
+      <positionY>329</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>82</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>1</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>procModeloCriare</processId>
+        <version>1</version>
+        <sequence>16</sequence>
+      </processStatePK>
+      <stateName>Tratar erro de integração</stateName>
+      <stateDescription>Tratar erro de integração</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>320</positionX>
+      <positionY>380</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>procModeloCriare</processId>
+        <version>1</version>
+        <sequence>20</sequence>
+      </processStatePK>
+      <stateName>Realizar correção</stateName>
+      <stateDescription>Realizar correção</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>360</positionX>
+      <positionY>53</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>procModeloCriare</processId>
+        <version>1</version>
+        <sequence>15</sequence>
+      </processStatePK>
+      <stateName>Intermediário</stateName>
+      <stateDescription>Intermediário</stateDescription>
+      <instruction>Evento intermediário do processo</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>0</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>1</allowanceAuthorityTime>
+      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>490</positionX>
+      <positionY>389</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>43</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <parentSequence>14</parentSequence>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>procModeloCriare</processId>
+        <version>1</version>
+        <sequence>9</sequence>
+      </processStatePK>
+      <stateName>Fim</stateName>
+      <stateDescription>Fim</stateDescription>
+      <instruction>Atividade final do processo</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>0</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>0</allowanceAuthorityTime>
+      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>false</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>630</positionX>
+      <positionY>349</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>6</stateType>
+      <bpmnType>60</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>procModeloCriare</processId>
+        <version>1</version>
+        <sequence>24</sequence>
+      </processStatePK>
+      <stateName>Fim</stateName>
+      <stateDescription>Fim</stateDescription>
+      <instruction>Atividade final do processo</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>0</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>0</allowanceAuthorityTime>
+      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>false</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>500</positionX>
+      <positionY>73</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>6</stateType>
+      <bpmnType>65</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+  </list>
+  <list/>
+  <list>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>procModeloCriare</processId>
+        <version>1</version>
+        <linkSequence>6</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>4</initialStateSequence>
+      <finalStateSequence>5</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>procModeloCriare</processId>
+        <version>1</version>
+        <linkSequence>13</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>14</initialStateSequence>
+      <finalStateSequence>9</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>procModeloCriare</processId>
+        <version>1</version>
+        <linkSequence>17</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>15</initialStateSequence>
+      <finalStateSequence>16</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>procModeloCriare</processId>
+        <version>1</version>
+        <linkSequence>18</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>16</initialStateSequence>
+      <finalStateSequence>14</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>procModeloCriare</processId>
+        <version>1</version>
+        <linkSequence>19</linkSequence>
+      </processLinkPK>
+      <actionLabel>1. APROVAR SOLICITAÇÃO</actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>5</initialStateSequence>
+      <finalStateSequence>14</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name>Aprovado</name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>procModeloCriare</processId>
+        <version>1</version>
+        <linkSequence>21</linkSequence>
+      </processLinkPK>
+      <actionLabel>2. ENVIAR PARA CORREÇÃO</actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>5</initialStateSequence>
+      <finalStateSequence>20</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name>Corrigir</name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>procModeloCriare</processId>
+        <version>1</version>
+        <linkSequence>23</linkSequence>
+      </processLinkPK>
+      <actionLabel>2. CANCELAR SOLICITAÇÃO</actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>20</initialStateSequence>
+      <finalStateSequence>24</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>procModeloCriare</processId>
+        <version>1</version>
+        <linkSequence>25</linkSequence>
+      </processLinkPK>
+      <actionLabel>1. ENVIAR</actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>20</initialStateSequence>
+      <finalStateSequence>5</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+  </list>
+  <list/>
+  <list>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>afterTaskComplete</eventId>
+        <processId>procModeloCriare</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function afterTaskComplete(colleagueId,nextSequenceId,userList){
+	var processId = 		getValue(&quot;WKNumProces&quot;);
+	var atividadeAtual = 	getValue(&quot;WKNumState&quot;);
+	var proximaAtividade = 	getValue(&quot;WKNextState&quot;);
+	
+	log.info(&quot;#### afterTaskComplete &quot; + processId + &quot; atividadeAtual: &quot; + atividadeAtual + &quot; proximaAtividade: &quot; + proximaAtividade);
+	
+	if(proximAtividade == 9){ //End
+		//INSERE HISTORICO APROVACAO
+		addDadosHistorico(&quot;DESCRICAO APROVACAO&quot;, hAPI.getCardValue(&quot;currentNome&quot;), hAPI.getCardValue(&quot;CAMPO_APROVACAO&quot;), hAPI.getCardValue(&quot;CAMPO_OBS_APROVADOR&quot;));
+	
+		//DISPARA EMAIL CUSTOMIZADO
+		log.info(&quot;############DISPARANDO EMAIL CUSTOMIZADO:&quot;);
+		var emailDestinatario = &quot;renato.avellar@criareconsulting.com&quot;;
+		var assunto = &quot;EXEMPLO ASSUNTO DO EMAIL&quot;;
+		var corpoEmail = 
+					&quot;Exemplo de corpo de e-mail: Processo nº &lt;b&gt;&quot; + &quot;&lt;a href=&apos;&quot; + fluigAPI.getPageService().getServerURL() + 
+					&quot;/portal/p/1/pageworkflowview?app_ecm_workflowview_detailsProcessInstanceID=&quot; + 
+					processId + &quot;&apos; target=&apos;_blank&apos;&gt;&quot; + processId + &quot;&lt;/a&gt;&quot; + 
+					&quot;&lt;/b&gt; foi finalizado por: &lt;b&gt;&quot; + hAPI.getCardValue(&quot;currentNome&quot;) + &quot;&lt;/b&gt;.&quot;
+	    
+	    dispararEmailCustomizado(emailDestinatario, assunto, corpoEmail);   
+	}
+}</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>afterProcessCreate</eventId>
+        <processId>procModeloCriare</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function afterProcessCreate(processId){&#xd;
+	var campoDescritor = &#xd;
+		&quot;CAMPO1: &quot; 	+ hAPI.getCardValue(&quot;CAMPO1&quot;) + &quot;\n&quot;+&#xd;
+		&quot;CAMPO2: &quot;  + hAPI.getCardValue(&quot;CAMPO2&quot;) + &quot;\n&quot;+&#xd;
+		&quot;CAMPO3: &quot; 	+ hAPI.getCardValue(&quot;CAMPO3&quot;) ;&#xd;
+	&#xd;
+	hAPI.setCardValue(&quot;campoDescritor&quot;, campoDescritor); //Campo descritor customizado para o processo&#xd;
+	hAPI.setCardValue(&quot;numeroFluxo&quot;, processId);&#xd;
+	hAPI.setCardValue(&quot;situacao&quot;, &quot;Em aberto&quot;);&#xd;
+}&#xd;
+</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>beforeCancelProcess</eventId>
+        <processId>procModeloCriare</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function beforeCancelProcess(colleagueId, processId) {&#xd;
+    log.warn(&quot;#### SOLICITACAO DE CANCELAMENTO DA SOLICITACAO &quot; + processId);&#xd;
+    hAPI.setCardValue(&quot;dataFinalizacao&quot;, obterDataCorrente());&#xd;
+    hAPI.setCardValue(&quot;situacao&quot;, &quot;Cancelado&quot;);&#xd;
+}</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>servicetask14</eventId>
+        <processId>procModeloCriare</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function servicetask14() {
+	log.info(&quot;$$$$$$$$$$ serviceTask14 $$$$$$$$$$&quot;);
+	
+	var envelope = {
+			&quot;PARAM_1&quot; : 	hAPI.getCardValue(&quot;CAMPO_1&quot;), 
+			&quot;PARAM_2&quot; : 	hAPI.getCardValue(&quot;CAMPO_2&quot;)	
+	}
+    
+    log.dir(envelope);
+    
+	var constraints = [];
+	constraints.push(DatasetFactory.createConstraint(&quot;envelope&quot;, JSONUtil.toJSON(envelope), &quot;&quot;, ConstraintType.MUST));
+    var dataset = DatasetFactory.getDataset(&quot;dsIntegracaoREST_POST&quot;, null, [c1], null);
+    
+    log.dir(dataset);
+    
+    if(dataset){
+        var codRetorno = dataset.getValue(0,&quot;COD_RETORNO&quot;);
+        var msgRetorno = dataset.getValue(0,&quot;MSG_RETORNO&quot;);
+        var response = codRetorno + &quot; - &quot; + msgRetorno
+        
+        log.info(&quot;$$$$$$$$$$ Response: &quot; + response);
+        
+        if(codRetorno == &quot;200&quot;){
+            log.info(&quot;$$$$$$$$$$ RETORNO: &quot; + response);
+        }else{
+            if(response.indexOf(&quot;INTERNAL SERVER ERROR&quot;) != -1){
+                throw &quot;Problemas de Integração, favor acionar a equipe de TI/Sistemas.&quot;;
+            }else{
+                throw response;
+            }
+        }
+    } else {
+    	throw &quot;Falha na integração. Entre em contato com a equipe de TI/Sistemas.&quot;;
+    }
+}</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>afterProcessFinish</eventId>
+        <processId>procModeloCriare</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function afterProcessFinish(processId){&#xd;
+	log.warn(&quot;#### FINALIZACAO DA SOLICITACAO &quot; + processId);&#xd;
+	hAPI.setCardValue(&quot;dataFinalizacao&quot;, obterDataCorrente());&#xd;
+	hAPI.setCardValue(&quot;situacao&quot;, &quot;Finalizado&quot;);&#xd;
+}&#xd;
+</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>beforeTaskSave</eventId>
+        <processId>procModeloCriare</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function beforeTaskSave(colleagueId,nextSequenceId,userList){&#xd;
+	var processId = 		getValue(&quot;WKNumProces&quot;);&#xd;
+	var atividadeAtual = 	getValue(&quot;WKNumState&quot;);&#xd;
+	var proximaAtividade = 	nextSequenceId;&#xd;
+	var mudandoAtividade = 	atividadeAtual != proximaAtividade;&#xd;
+	&#xd;
+	log.info(&quot;#### beforeTaskSave &quot; + processId + &quot; Atividade: &quot; + atividadeAtual + &quot; proximaAtividade: &quot; + proximaAtividade + &quot; mudandoAtividade: &quot; + mudandoAtividade);&#xd;
+    &#xd;
+    //Exemplo Anexo obrigatório na atividade&#xd;
+    if(proximaAtividade == 5 &amp;&amp; mudandoAtividade){&#xd;
+    	var qtdAnexos = hAPI.listAttachments();&#xd;
+		if(qtdAnexos.size() == 0){&#xd;
+			exibirMensagem(&quot;Favor, inserir pelo menos &lt;b&gt;1 anexo&lt;/b&gt; para prosseguir.&quot;);&#xd;
+		}&#xd;
+    }&#xd;
+    &#xd;
+    //Passou por todas as validações, preenche a atividadeAtual&#xd;
+    hAPI.setCardValue(&quot;atividadeAtual&quot;, proximaAtividade);&#xd;
+}</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>funcoesUteis</eventId>
+        <processId>procModeloCriare</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function currencyToNumber(numero){&#xd;
+	if(numero != null &amp;&amp; numero != undefined &amp;&amp; numero != &apos;&apos;){&#xd;
+        return parseFloat(numero.replace(&quot;.&quot;,&quot;&quot;).replace(&quot;,&quot;,&quot;.&quot;));&#xd;
+	}else{&#xd;
+		return 0&#xd;
+	}&#xd;
+}&#xd;
+&#xd;
+function convertFloat(valor){&#xd;
+	return parseFloat(valor.replace(&quot;.&quot;,&quot;&quot;).replace(&quot;,&quot;,&quot;.&quot;));&#xd;
+}&#xd;
+&#xd;
+function numberToCurrency(numero) {&#xd;
+    var numero = parseFloat(numero).toFixed(2).split(&apos;.&apos;);&#xd;
+    numero[0] = numero[0].split(/(?=(?:...)*$)/).join(&apos;.&apos;);&#xd;
+    return numero.join(&apos;,&apos;);&#xd;
+}&#xd;
+&#xd;
+function obterDataCorrente(){&#xd;
+	var dateCorrente = new Date();&#xd;
+	var formatoData = new java.text.SimpleDateFormat(&quot;dd/MM/yyyy HH:mm:ss&quot;);&#xd;
+	return formatoData.format(dateCorrente);&#xd;
+}&#xd;
+&#xd;
+function converteDataISO(data){&#xd;
+	data = String(data);&#xd;
+	&#xd;
+	if(data == &quot;&quot; || data == null || data == undefined){&#xd;
+		return &quot;&quot;&#xd;
+	} else {&#xd;
+	    var dia = &quot;&quot; + data.substring(8,10);&#xd;
+	    var mes = &quot;&quot; + data.substring(5,7);&#xd;
+	    var ano = &quot;&quot; + data.substring(0,4);&#xd;
+	    var dataFormat =  dia + &apos;/&apos; + mes + &apos;/&apos; +  ano;&#xd;
+	    &#xd;
+	    return String(dataFormat)&#xd;
+	}&#xd;
+}&#xd;
+&#xd;
+function converteDataISO(data){&#xd;
+	data = String(data);&#xd;
+	&#xd;
+	if(data == &quot;&quot; || data == null || data == undefined){&#xd;
+		return &quot;&quot;&#xd;
+	} else {&#xd;
+	    var dia = &quot;&quot; + data.substring(8,10);&#xd;
+	    var mes = &quot;&quot; + data.substring(5,7);&#xd;
+	    var ano = &quot;&quot; + data.substring(0,4);&#xd;
+	    var dataFormat =  dia + &apos;/&apos; + mes + &apos;/&apos; +  ano;&#xd;
+	    &#xd;
+	    return String(dataFormat)&#xd;
+	}&#xd;
+}&#xd;
+&#xd;
+function exibirMensagem(mensagem){&#xd;
+	throw 	&quot;&lt;b&gt;veja o motivo abaixo:&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;hr&gt;&quot; +&#xd;
+			&quot;●&amp;nbsp;&amp;nbsp;&quot; + mensagem + &quot;&lt;br&gt;&lt;hr&gt;&lt;br&gt;&quot; +&#xd;
+			&quot;&lt;b&gt;Dúvidas?&lt;/b&gt; Entre em contato com departamento de TI/Sistemas.&lt;br&gt;&lt;br&gt;&quot;;		&#xd;
+}&#xd;
+&#xd;
+function addDadosHistorico(area, usuario, status, detalhe){ //Função para criar um historico de aprovações quando houver aprovação multinível&#xd;
+	var tabelaHist = new java.util.HashMap();&#xd;
+	tabelaHist.put(&quot;histData&quot;, obterDataCorrente());&#xd;
+	tabelaHist.put(&quot;histArea&quot;, area);&#xd;
+	tabelaHist.put(&quot;histUsuario&quot;, usuario);&#xd;
+	tabelaHist.put(&quot;histStatus&quot;, status);&#xd;
+	tabelaHist.put(&quot;histDetalhe&quot;, detalhe);&#xd;
+	&#xd;
+	hAPI.addCardChild(&quot;tabelaHistorico&quot;, tabelaHist);&#xd;
+}&#xd;
+&#xd;
+function dispararEmailCustomizado(emailDestinatario, assunto, corpoEmail){&#xd;
+    try{&#xd;
+        var parametros = 		new java.util.HashMap();&#xd;
+        var destinatarios = 	new java.util.ArrayList();&#xd;
+        &#xd;
+        parametros.put(&quot;subject&quot;, assunto);&#xd;
+        parametros.put(&quot;corpoEmail&quot;, corpoEmail);&#xd;
+        destinatarios.add(emailDestinatario);&#xd;
+        &#xd;
+        log.info(&quot;#### enviarEmail &gt;&gt; parametros &quot; + parametros + &quot;destinatarios &quot; + destinatarios);&#xd;
+        &#xd;
+        notifier.notify(&apos;admin&apos;, &quot;template_email_BLANK&quot;, parametros, destinatarios, &quot;text/html&quot;);&#xd;
+    }catch(e){&#xd;
+    	log.info(&quot;#### ERRO NO EMAIL CUSTOMIZADO&quot;);&#xd;
+    	log.error(e);&#xd;
+        throw(e)&#xd;
+    }&#xd;
+}&#xd;
+</eventDescription>
+    </WorkflowProcessEvent>
+  </list>
+  <list/>
+  <list>
+    <SwimLane>
+      <color>FFFFFF</color>
+      <height>471</height>
+      <width>741</width>
+      <positionX>10</positionX>
+      <positionY>10</positionY>
+      <stateName>Pool</stateName>
+      <type>1</type>
+      <parentSequence>0</parentSequence>
+      <swimLanePK>
+        <companyId>1</companyId>
+        <processId>procModeloCriare</processId>
+        <version>1</version>
+        <sequence>1</sequence>
+      </swimLanePK>
+    </SwimLane>
+    <SwimLane>
+      <color>FFFFFF</color>
+      <height>157</height>
+      <width>711</width>
+      <positionX>40</positionX>
+      <positionY>10</positionY>
+      <stateName>Solicitante</stateName>
+      <type>2</type>
+      <parentSequence>1</parentSequence>
+      <swimLanePK>
+        <companyId>1</companyId>
+        <processId>procModeloCriare</processId>
+        <version>1</version>
+        <sequence>2</sequence>
+      </swimLanePK>
+    </SwimLane>
+    <SwimLane>
+      <color>FFFFFF</color>
+      <height>157</height>
+      <width>711</width>
+      <positionX>40</positionX>
+      <positionY>167</positionY>
+      <stateName>Aprovador</stateName>
+      <type>2</type>
+      <parentSequence>1</parentSequence>
+      <swimLanePK>
+        <companyId>1</companyId>
+        <processId>procModeloCriare</processId>
+        <version>1</version>
+        <sequence>3</sequence>
+      </swimLanePK>
+    </SwimLane>
+    <SwimLane>
+      <color>E7E7E7</color>
+      <height>157</height>
+      <width>711</width>
+      <positionX>40</positionX>
+      <positionY>324</positionY>
+      <stateName>TIC</stateName>
+      <type>2</type>
+      <parentSequence>1</parentSequence>
+      <swimLanePK>
+        <companyId>1</companyId>
+        <processId>procModeloCriare</processId>
+        <version>1</version>
+        <sequence>4</sequence>
+      </swimLanePK>
+    </SwimLane>
+  </list>
+  <list>
+    <ProcessComponGraf>
+      <componType>1</componType>
+      <positionX>210</positionX>
+      <positionY>20</positionY>
+      <processComponGrafPK>
+        <companyId>1</companyId>
+        <processId>procModeloCriare</processId>
+        <version>1</version>
+        <componGrafSequence>7</componGrafSequence>
+      </processComponGrafPK>
+      <stateName>Start</stateName>
+    </ProcessComponGraf>
+  </list>
+  <list>
+    <ProcessLinkAssoc>
+      <processLinkAssocPK>
+        <companyId>1</companyId>
+        <processId>procModeloCriare</processId>
+        <version>1</version>
+        <linkSequence>8</linkSequence>
+      </processLinkAssocPK>
+      <initialStateSequence>7</initialStateSequence>
+      <finalStateSequence>4</finalStateSequence>
+    </ProcessLinkAssoc>
+  </list>
+  <list>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>procModeloCriare</processId>
+        <version>4</version>
+        <linkSequence>6</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>167</positionX>
+      <positionY>247</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>procModeloCriare</processId>
+        <version>4</version>
+        <linkSequence>8</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>167</positionX>
+      <positionY>48</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>procModeloCriare</processId>
+        <version>4</version>
+        <linkSequence>25</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>339</positionX>
+      <positionY>161</positionY>
+    </ProcessLinkBend>
+  </list>
+  <list/>
+  <list/>
+  <list/>
+  <list>
+    <ProcessStateService>
+      <companyId>1</companyId>
+      <processId>procModeloCriare</processId>
+      <version>1</version>
+      <sequence>14</sequence>
+      <attempts>3</attempts>
+      <sucessFullMessage>Integração executada com sucesso</sucessFullMessage>
+      <serviceName></serviceName>
+      <frequency>1</frequency>
+      <frequencyType>0</frequencyType>
+    </ProcessStateService>
+  </list>
+  <list/>
+  <list/>
+  <list/>
+  <list/>
+</list>

@@ -1,0 +1,311 @@
+.row {
+	display: flex;
+	align-items: flex-end;
+}
+
+.panel.panel-solicitante {
+    background-color: #414f78 !important;
+}
+
+.color-grey{
+	color:#eee !important
+}
+
+.text-center {
+	vertical-align: middle;
+	text-align: center;
+}
+
+.moeda,
+.cpfCnpj,
+.telefone {
+	text-align: right;
+}
+
+.align-right {
+	justify-content: flex-end;
+	display: flex;
+}
+
+form label.required:after {
+    color: #FF0000;
+    content: " *";
+}
+
+input[readonly],
+textarea[readonly],
+radio[readonly],
+select[readonly],
+.control-label {
+  pointer-events: none;
+  touch-action: none;
+}
+
+.disabled {
+  touch-action: none;
+  pointer-events: none;
+  background: #eee !important;
+}
+
+.disabledTextarea {
+   touch-action: auto;
+   pointer-events: auto;
+   background: #eee !important;
+}
+
+form .zoom-alert {
+	position: absolute !important;
+	width: calc(100% - 30px) !important;
+	z-index: 999 !important;
+	box-shadow: 2px 2px 2px -1px rgba(0, 0, 0, 0.75);
+}
+
+.fluig-style-guide form 
+.input-group .input-group-addon,
+.fluig-style-guide form 
+.btn-primary,
+.fluig-style-guide form 
+.select2-custom-theme .select2-fluigicon-zoom,
+.fluig-style-guide form 
+.panel.panel-default > .panel-heading {
+	background-color: #414f78;
+	letter-spacing: 0.7px;
+	color: #eee;
+	border-color: inherit;
+}
+
+.fluig-style-guide .btn-primary {
+  color: #fff;
+  background-color: #414f78;
+  border-color: #07105f;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.fluig-style-guide form h1 {
+	letter-spacing: -0.7px;
+}
+
+.fluig-style-guide form label {
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.fluig-style-guide form h1, 
+.fluig-style-guide form h2, 
+.fluig-style-guide form h3, 
+.fluig-style-guide form h4 {
+	font-family: 'Roboto', sans-serif;
+	color: #414f78;
+	font-weight: bold;
+}
+
+.fluig-style-guide form label,
+.fluig-style-guide form{
+	font-family: 'Roboto', sans-serif;
+	color: #414f78;
+}
+
+.titulo-panel {
+	padding: 15px !important;
+	font-family: 'Roboto', sans-serif !important;
+	font-weight: bold !important;
+}
+
+.wcm-background {
+	background-color: #fff !important;
+}
+
+.wcm-header-background {
+	background-color: #fff !important;
+}
+
+.fluig-style-guide .tabelaPaiFilho .form-group {
+    margin-bottom: 5px;
+}
+
+.fluig-style-guide .tabelaPaiFilho > tbody > tr > td {
+	vertical-align: middle !important;
+	text-align: center !important;
+}
+
+.fluig-style-guide .tabelaPaiFilho > thead > tr > th {
+	vertical-align: middle !important;
+	text-align: center !important;
+	background-color: #eee !important;
+}
+
+.fluig-style-guide .tabelaPaiFilho > tbody > tr > td.count {
+	font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+	.anexoDesktop {
+		display: none;
+	}
+	#mobile-indicator {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+	.anexoMobile {
+		display: none;
+	}
+}
+
+.invisible {
+   display: none !important;
+}
+
+.fluig-style-guide .form-control.has-error  {
+    border-color: #a94442 !important;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.has-error-checklisk {
+  color: #a94442;
+}
+
+.modal-dialog .scroll {
+   display: none;
+   max-height: 300px;
+   overflow: auto;
+}
+
+.fluig-style-guide .input-group-btn:last-child>.btn, 
+.fluig-style-guide .input-group-btn:last-child>.btn-group {
+ margin-top: -2px;
+}
+
+.fluig-style-guide .file-input-wrapper {
+	min-width: 100%;
+    margin-bottom: 20px;
+}  
+
+.fluig-style-guide #pagGroup .alerta {
+ 	display: none;
+}
+
+.fluig-style-guide .editable-container.editable-inline .editable-input {
+    display: table-cell !important;
+}
+
+.fluig-style-guide .editable-container.editable-inline .editable-input,
+.fluig-style-guide .editable-container.editable-inline {
+    width: 100%;
+}
+
+.fluig-style-guide .editable-container.editable-inline input {
+    border-radius: 4px 0px 0px 4px;
+}
+
+.fluig-style-guide .editable-container.editable-inline button {
+    height: 34px;
+    color: #fff;
+    border-color: #4b4c4e;
+    background-color: #58595b;
+    margin: 0;
+}
+
+.fluig-style-guide .editable-container.editable-inline button:hover {
+    color: #fff;
+    border-color: #2d2e2f;
+    background-color: #3f4041;
+}
+
+.fluig-style-guide table .form-group {
+	margin-bottom: 0px;
+}
+
+.fluig-style-guide .btn-success span {
+    color: #fff !important;
+}
+
+.fluig-style-guide .btn-success:hover {
+    border-color: #398439 !important;
+    background-color: #449d44 !important;
+}
+
+.fluig-style-guide #divHistoricoAjuste {
+	display: none;
+}
+
+.fluig-style-guide.VIEW .file-input-wrapper,
+.fluig-style-guide.VIEW .form-group .input-group-btn {
+	display: none;
+}
+
+.fluig-style-guide.VIEW .form-group span.form-control {
+    background: #eee;
+    background-color: rgba(89, 89, 89, 0.1);
+    font-size: 10px !important;
+    font-family: 'Roboto', sans-serif !important;
+    line-height: 1.42857143;
+    display: block;
+    width: 100%;
+    height: 32px;
+    padding: 5px 10px;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    color: #555;
+    border: 1px solid #414f78;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}  
+
+.fluig-style-guide .input-group input.form-control.editable,
+.fluig-style-guide .editable-container.editable-inline input,
+.select2-hidden-accessible {
+    font-size: 10px !important;
+    font-family: 'Roboto', sans-serif !important;
+    line-height: 1.42857143;
+    display: block;
+    width: 100%;
+    height: 32px !important;
+    padding: 5px 10px;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    color: #414f78;
+    border: 1px solid #414f78;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.fluig-style-guide.VIEW #divAnexos table td:first-child,
+.fluig-style-guide.VIEW #divAnexos table th:first-child {
+	display: none;
+}
+
+.fluig-style-guide.VIEW #divAnexos table .form-group .input-group-btn {
+	display: table-cell;
+}
+
+.labelSolic {
+	font-size: 25px !important;
+	font-family: 'Roboto', sans-serif !important;
+}
+
+.fluig-style-guide legend {
+	font-size: 21px !important;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold !important;
+	line-height: inherit;
+	display: block;
+	width: 100%;
+	margin-top: 15px;
+	padding: 0;
+	color: #414f78 !important;
+	border: 0;
+	border-bottom: 3px solid #ccc;
+}
+
+.fluig-style-guide page-footer {
+	font-size: 10px !important;
+	display: block;
+	width: 100%;
+	margin-top: 10px;
+	color: #ccc;
+	border: 0;
+	border-top: 2px solid #eee;
+	text-align: center;
+	font-family: 'Roboto', sans-serif !important;
+}

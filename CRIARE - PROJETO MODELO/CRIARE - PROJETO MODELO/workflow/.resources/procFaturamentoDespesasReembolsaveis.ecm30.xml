@@ -1,0 +1,2759 @@
+<list>
+  <ProcessDefinition>
+    <processDefinitionPK>
+      <companyId>1</companyId>
+      <processId>procFaturamentoDespesasReembolsaveis</processId>
+    </processDefinitionPK>
+    <processDescription>FDR - Faturamento de despesas reembolsáveis</processDescription>
+    <instruction></instruction>
+    <active>true</active>
+    <publicProcess>false</publicProcess>
+    <volumeId>Default</volumeId>
+    <categoryId>Contas a Receber</categoryId>
+    <managerEngineAllocationId>Grupo</managerEngineAllocationId>
+    <managerEngineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Group&gt;FDR_GESTOR&lt;/Group&gt;&lt;/AssignmentController&gt;</managerEngineAllocationConfiguration>
+    <snapshotFrequency>0</snapshotFrequency>
+    <baseDay>0</baseDay>
+    <baseMonth>0</baseMonth>
+    <periodId>Default</periodId>
+    <uniqueCardVersion>false</uniqueCardVersion>
+    <keyWord></keyWord>
+    <complementsLevel>0</complementsLevel>
+    <notifyRequisitionerComplements>false</notifyRequisitionerComplements>
+    <notifyManagerComplements>false</notifyManagerComplements>
+    <deadlineTime>0</deadlineTime>
+    <warningDeadlineTime>0</warningDeadlineTime>
+    <notifyAuthorityComplements>false</notifyAuthorityComplements>
+  </ProcessDefinition>
+  <ProcessDefinitionVersion>
+    <processDefinitionVersionPK>
+      <companyId>1</companyId>
+      <processId>FDR - Faturamento de despesas reembolsáveis</processId>
+      <version>68</version>
+    </processDefinitionVersionPK>
+    <versionDescription></versionDescription>
+    <formId>5746</formId>
+    <editionMode>true</editionMode>
+    <updateAttachmentsVersion>false</updateAttachmentsVersion>
+    <controlsAttachmentsSecurity>false</controlsAttachmentsSecurity>
+    <active>true</active>
+    <blockedVersion>false</blockedVersion>
+    <counterSign>false</counterSign>
+    <openInstances>0</openInstances>
+    <bpmnVersion>2</bpmnVersion>
+    <processStates/>
+    <favorito>false</favorito>
+    <inheritFormSecurity>false</inheritFormSecurity>
+    <mobileReady>true</mobileReady>
+  </ProcessDefinitionVersion>
+  <list>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <sequence>2</sequence>
+      </processStatePK>
+      <stateName>Início</stateName>
+      <stateDescription>Início</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>true</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>false</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>130</positionX>
+      <positionY>100</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>10</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <sequence>3</sequence>
+      </processStatePK>
+      <stateName>Realizar Aprovação (Supervisor)</stateName>
+      <stateDescription>Realizar Aprovação (Supervisor)</stateDescription>
+      <instruction>Até R$5.000,00</instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>mec_AprovadorSupervisor</engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>360</positionX>
+      <positionY>463</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <sequence>5</sequence>
+      </processStatePK>
+      <stateName>Realizar Aprovação (Coordenador)</stateName>
+      <stateDescription>Realizar Aprovação (Coordenador)</stateDescription>
+      <instruction>Acima de R$5.000,01</instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>mec_AprovadorCoordenador</engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>360</positionX>
+      <positionY>252</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <sequence>7</sequence>
+      </processStatePK>
+      <stateName>Realizar Aprovação (Coordenador)</stateName>
+      <stateDescription>Realizar Aprovação (Coordenador)</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>mec_AprovadorCoordenador</engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>630</positionX>
+      <positionY>455</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <sequence>9</sequence>
+      </processStatePK>
+      <stateName>Realizar Aprovação (Gerente)</stateName>
+      <stateDescription>Realizar Aprovação (Gerente)</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>mec_AprovadorGerente</engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>630</positionX>
+      <positionY>260</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <sequence>10</sequence>
+      </processStatePK>
+      <stateName>Realizar Aprovação (Diretor)</stateName>
+      <stateDescription>Realizar Aprovação (Diretor)</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>mec_AprovadorDiretor</engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>950</positionX>
+      <positionY>260</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <sequence>26</sequence>
+      </processStatePK>
+      <stateName>Realizar Correções</stateName>
+      <stateDescription>Realizar Correções</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Executor Atividade</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;BaseActivity&gt;2&lt;/BaseActivity&gt;&lt;Returns&gt;Last&lt;/Returns&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>230</positionX>
+      <positionY>80</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <sequence>28</sequence>
+      </processStatePK>
+      <stateName>Realizar o faturamento / Cobrança ao cliente</stateName>
+      <stateDescription>Realizar o faturamento / Cobrança ao cliente</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Pool Grupo</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Group&gt;FDR_FINANCEIRO&lt;/Group&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>1307</positionX>
+      <positionY>858</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <sequence>84</sequence>
+      </processStatePK>
+      <stateName>Realizar a compra e gerar a(s) RF(s) </stateName>
+      <stateDescription>Realizar a compra e gerar a(s) RF(s) </stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Pool Grupo</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Group&gt;GRUPO_TRABALHO_SUPRIMENTOS&lt;/Group&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>1100</positionX>
+      <positionY>655</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <sequence>117</sequence>
+      </processStatePK>
+      <stateName>Analisar solicitação e realizar cotação</stateName>
+      <stateDescription>Analisar solicitação e realizar cotação</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Pool Grupo</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Group&gt;GRUPO_TRABALHO_SUPRIMENTOS&lt;/Group&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>95</positionX>
+      <positionY>654</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <sequence>92</sequence>
+      </processStatePK>
+      <stateName>RECEIPT - Realizar Correções</stateName>
+      <stateDescription>RECEIPT - Realizar Correções</stateDescription>
+      <instruction>Evento intermediário do processo</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>0</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>1</allowanceAuthorityTime>
+      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>380</positionX>
+      <positionY>100</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>42</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <parentSequence>0</parentSequence>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <sequence>94</sequence>
+      </processStatePK>
+      <stateName>LINK - Enviar correções</stateName>
+      <stateDescription>LINK - Enviar correções</stateDescription>
+      <instruction>Evento intermediário do processo</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>0</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>1</allowanceAuthorityTime>
+      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>532</positionX>
+      <positionY>180</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>36</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <parentSequence>0</parentSequence>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <sequence>95</sequence>
+      </processStatePK>
+      <stateName>LINK - Enviar correções</stateName>
+      <stateDescription>LINK - Enviar correções</stateDescription>
+      <instruction>Evento intermediário do processo</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>0</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>1</allowanceAuthorityTime>
+      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>812</positionX>
+      <positionY>180</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>36</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <parentSequence>0</parentSequence>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <sequence>96</sequence>
+      </processStatePK>
+      <stateName>LINK - Enviar correções</stateName>
+      <stateDescription>LINK - Enviar correções</stateDescription>
+      <instruction>Evento intermediário do processo</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>0</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>1</allowanceAuthorityTime>
+      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>1135</positionX>
+      <positionY>180</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>36</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <parentSequence>0</parentSequence>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <sequence>97</sequence>
+      </processStatePK>
+      <stateName>LINK - Enviar correções</stateName>
+      <stateDescription>LINK - Enviar correções</stateDescription>
+      <instruction>Evento intermediário do processo</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>0</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>1</allowanceAuthorityTime>
+      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>812</positionX>
+      <positionY>390</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>36</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <parentSequence>0</parentSequence>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <sequence>98</sequence>
+      </processStatePK>
+      <stateName>LINK - Enviar correções</stateName>
+      <stateDescription>LINK - Enviar correções</stateDescription>
+      <instruction>Evento intermediário do processo</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>0</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>1</allowanceAuthorityTime>
+      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>532</positionX>
+      <positionY>390</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>36</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <parentSequence>0</parentSequence>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <sequence>138</sequence>
+      </processStatePK>
+      <stateName>LINK - Enviar correções</stateName>
+      <stateDescription>LINK - Enviar correções</stateDescription>
+      <instruction>Evento intermediário do processo</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>0</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>1</allowanceAuthorityTime>
+      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>350</positionX>
+      <positionY>690</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>36</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <parentSequence>0</parentSequence>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <sequence>141</sequence>
+      </processStatePK>
+      <stateName>Aguardando a finalização da(s) RF(s)</stateName>
+      <stateDescription>Aguardando a finalização da(s) RF(s)</stateDescription>
+      <instruction>Evento intermediário do processo</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>0</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>1</allowanceAuthorityTime>
+      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>1250</positionX>
+      <positionY>620</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>35</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <parentSequence>0</parentSequence>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <sequence>6</sequence>
+      </processStatePK>
+      <stateName>Destino</stateName>
+      <stateDescription>Destino</stateDescription>
+      <joint>false</joint>
+      <initialState>false</initialState>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <automatic>true</automatic>
+      <positionX>250</positionX>
+      <positionY>370</positionY>
+      <inhibitTransfer>false</inhibitTransfer>
+      <stateType>1</stateType>
+      <bpmnType>120</bpmnType>
+      <signalId>0</signalId>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <sequence>8</sequence>
+      </processStatePK>
+      <stateName>Aprovado</stateName>
+      <stateDescription>Aprovado</stateDescription>
+      <joint>false</joint>
+      <initialState>false</initialState>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <automatic>true</automatic>
+      <positionX>520</positionX>
+      <positionY>455</positionY>
+      <inhibitTransfer>false</inhibitTransfer>
+      <stateType>1</stateType>
+      <bpmnType>120</bpmnType>
+      <signalId>0</signalId>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <sequence>11</sequence>
+      </processStatePK>
+      <stateName>Aprovado</stateName>
+      <stateDescription>Aprovado</stateDescription>
+      <joint>false</joint>
+      <initialState>false</initialState>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <automatic>true</automatic>
+      <positionX>800</positionX>
+      <positionY>252</positionY>
+      <inhibitTransfer>false</inhibitTransfer>
+      <stateType>1</stateType>
+      <bpmnType>120</bpmnType>
+      <signalId>0</signalId>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <sequence>16</sequence>
+      </processStatePK>
+      <stateName>Aprovado</stateName>
+      <stateDescription>Aprovado</stateDescription>
+      <joint>false</joint>
+      <initialState>false</initialState>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <automatic>true</automatic>
+      <positionX>520</positionX>
+      <positionY>252</positionY>
+      <inhibitTransfer>false</inhibitTransfer>
+      <stateType>1</stateType>
+      <bpmnType>120</bpmnType>
+      <signalId>0</signalId>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <sequence>17</sequence>
+      </processStatePK>
+      <stateName>Aprovado</stateName>
+      <stateDescription>Aprovado</stateDescription>
+      <joint>false</joint>
+      <initialState>false</initialState>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <automatic>true</automatic>
+      <positionX>1123</positionX>
+      <positionY>252</positionY>
+      <inhibitTransfer>false</inhibitTransfer>
+      <stateType>1</stateType>
+      <bpmnType>120</bpmnType>
+      <signalId>0</signalId>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <sequence>18</sequence>
+      </processStatePK>
+      <stateName>Aprovado</stateName>
+      <stateDescription>Aprovado</stateDescription>
+      <joint>false</joint>
+      <initialState>false</initialState>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <automatic>true</automatic>
+      <positionX>800</positionX>
+      <positionY>455</positionY>
+      <inhibitTransfer>false</inhibitTransfer>
+      <stateType>1</stateType>
+      <bpmnType>120</bpmnType>
+      <signalId>0</signalId>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <sequence>130</sequence>
+      </processStatePK>
+      <stateName>RF(s) Finalizada(s)?</stateName>
+      <stateDescription>RF(s) Finalizada(s)?</stateDescription>
+      <joint>false</joint>
+      <initialState>false</initialState>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <automatic>true</automatic>
+      <positionX>1330</positionX>
+      <positionY>647</positionY>
+      <inhibitTransfer>false</inhibitTransfer>
+      <stateType>1</stateType>
+      <bpmnType>120</bpmnType>
+      <signalId>0</signalId>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <sequence>135</sequence>
+      </processStatePK>
+      <stateName>Aprovado</stateName>
+      <stateDescription>Aprovado</stateDescription>
+      <joint>false</joint>
+      <initialState>false</initialState>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <automatic>true</automatic>
+      <positionX>250</positionX>
+      <positionY>654</positionY>
+      <inhibitTransfer>false</inhibitTransfer>
+      <stateType>1</stateType>
+      <bpmnType>120</bpmnType>
+      <signalId>0</signalId>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <sequence>15</sequence>
+      </processStatePK>
+      <stateName>Fim</stateName>
+      <stateDescription>Fim</stateDescription>
+      <instruction>Atividade final do processo</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>0</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>0</allowanceAuthorityTime>
+      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>false</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>1480</positionX>
+      <positionY>894</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>6</stateType>
+      <bpmnType>60</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+  </list>
+  <list>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <expressionOrder>1</expressionOrder>
+        <version>68</version>
+        <sequence>6</sequence>
+      </conditionProcessStatePK>
+      <condition>hAPI.getCardValue(&quot;aprovadorDestino&quot;) == &quot;supervisor&quot;</condition>
+      <destinationSequenceId>3</destinationSequenceId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <expressionOrder>2</expressionOrder>
+        <version>68</version>
+        <sequence>6</sequence>
+      </conditionProcessStatePK>
+      <condition>hAPI.getCardValue(&quot;aprovadorDestino&quot;) == &quot;coordenador&quot;</condition>
+      <destinationSequenceId>5</destinationSequenceId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <expressionOrder>1</expressionOrder>
+        <version>68</version>
+        <sequence>8</sequence>
+      </conditionProcessStatePK>
+      <condition>hAPI.getCardValue(&quot;aprovacaoCoordenador&quot;) == &quot;Nao&quot;</condition>
+      <destinationSequenceId>98</destinationSequenceId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <expressionOrder>2</expressionOrder>
+        <version>68</version>
+        <sequence>8</sequence>
+      </conditionProcessStatePK>
+      <condition>hAPI.getCardValue(&quot;aprovadorDestino&quot;) == &quot;coordenador&quot;</condition>
+      <destinationSequenceId>7</destinationSequenceId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <expressionOrder>3</expressionOrder>
+        <version>68</version>
+        <sequence>8</sequence>
+      </conditionProcessStatePK>
+      <condition>hAPI.getCardValue(&quot;aprovadorDestino&quot;) == &quot;celulaFiscal&quot;</condition>
+      <destinationSequenceId>84</destinationSequenceId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <expressionOrder>1</expressionOrder>
+        <version>68</version>
+        <sequence>11</sequence>
+      </conditionProcessStatePK>
+      <condition>hAPI.getCardValue(&quot;aprovacaoCoordenador&quot;) == &quot;Nao&quot;</condition>
+      <destinationSequenceId>95</destinationSequenceId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <expressionOrder>2</expressionOrder>
+        <version>68</version>
+        <sequence>11</sequence>
+      </conditionProcessStatePK>
+      <condition>hAPI.getCardValue(&quot;aprovadorDestino&quot;) == &quot;diretor&quot;</condition>
+      <destinationSequenceId>10</destinationSequenceId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <expressionOrder>3</expressionOrder>
+        <version>68</version>
+        <sequence>11</sequence>
+      </conditionProcessStatePK>
+      <condition>hAPI.getCardValue(&quot;aprovadorDestino&quot;) == &quot;celulaFiscal&quot;</condition>
+      <destinationSequenceId>84</destinationSequenceId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <expressionOrder>1</expressionOrder>
+        <version>68</version>
+        <sequence>16</sequence>
+      </conditionProcessStatePK>
+      <condition>hAPI.getCardValue(&quot;aprovacaoCoordenador&quot;) == &quot;Nao&quot;</condition>
+      <destinationSequenceId>94</destinationSequenceId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <expressionOrder>2</expressionOrder>
+        <version>68</version>
+        <sequence>16</sequence>
+      </conditionProcessStatePK>
+      <condition>hAPI.getCardValue(&quot;aprovacaoCoordenador&quot;) == &quot;Sim&quot;</condition>
+      <destinationSequenceId>9</destinationSequenceId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <expressionOrder>1</expressionOrder>
+        <version>68</version>
+        <sequence>17</sequence>
+      </conditionProcessStatePK>
+      <condition>hAPI.getCardValue(&quot;aprovacaoCoordenador&quot;) == &quot;Nao&quot;</condition>
+      <destinationSequenceId>96</destinationSequenceId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <expressionOrder>2</expressionOrder>
+        <version>68</version>
+        <sequence>17</sequence>
+      </conditionProcessStatePK>
+      <condition>hAPI.getCardValue(&quot;aprovacaoCoordenador&quot;) == &quot;Sim&quot;</condition>
+      <destinationSequenceId>84</destinationSequenceId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <expressionOrder>1</expressionOrder>
+        <version>68</version>
+        <sequence>18</sequence>
+      </conditionProcessStatePK>
+      <condition>hAPI.getCardValue(&quot;aprovacaoCoordenador&quot;) == &quot;Nao&quot;</condition>
+      <destinationSequenceId>97</destinationSequenceId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <expressionOrder>2</expressionOrder>
+        <version>68</version>
+        <sequence>18</sequence>
+      </conditionProcessStatePK>
+      <condition>hAPI.getCardValue(&quot;aprovacaoCoordenador&quot;) == &quot;Sim&quot;</condition>
+      <destinationSequenceId>84</destinationSequenceId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <expressionOrder>1</expressionOrder>
+        <version>68</version>
+        <sequence>130</sequence>
+      </conditionProcessStatePK>
+      <condition>validaStatusGateway() == &quot;0&quot; || validaStatusGateway() == false</condition>
+      <destinationSequenceId>141</destinationSequenceId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <expressionOrder>2</expressionOrder>
+        <version>68</version>
+        <sequence>130</sequence>
+      </conditionProcessStatePK>
+      <condition>validaStatusGateway() == &quot;1&quot; || validaStatusGateway() == &quot;noResult&quot;</condition>
+      <destinationSequenceId>84</destinationSequenceId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <expressionOrder>3</expressionOrder>
+        <version>68</version>
+        <sequence>130</sequence>
+      </conditionProcessStatePK>
+      <condition>validaStatusGateway() == &quot;2&quot;</condition>
+      <destinationSequenceId>28</destinationSequenceId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <expressionOrder>1</expressionOrder>
+        <version>68</version>
+        <sequence>135</sequence>
+      </conditionProcessStatePK>
+      <condition>hAPI.getCardValue(&quot;aprovacaoCoordenador&quot;) == &quot;Nao&quot;</condition>
+      <destinationSequenceId>138</destinationSequenceId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <expressionOrder>2</expressionOrder>
+        <version>68</version>
+        <sequence>135</sequence>
+      </conditionProcessStatePK>
+      <condition>hAPI.getCardValue(&quot;aprovacaoCoordenador&quot;) == &quot;Sim&quot;</condition>
+      <destinationSequenceId>6</destinationSequenceId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+  </list>
+  <list>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <linkSequence>32</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>3</initialStateSequence>
+      <finalStateSequence>8</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <linkSequence>34</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>5</initialStateSequence>
+      <finalStateSequence>16</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <linkSequence>35</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>6</initialStateSequence>
+      <finalStateSequence>5</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <linkSequence>36</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>6</initialStateSequence>
+      <finalStateSequence>3</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <linkSequence>37</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>7</initialStateSequence>
+      <finalStateSequence>18</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name>Sim</name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <linkSequence>38</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>8</initialStateSequence>
+      <finalStateSequence>7</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name>Sim</name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <linkSequence>42</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>9</initialStateSequence>
+      <finalStateSequence>11</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name>Sim</name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <linkSequence>43</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>10</initialStateSequence>
+      <finalStateSequence>17</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <linkSequence>44</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>11</initialStateSequence>
+      <finalStateSequence>10</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name>Sim</name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <linkSequence>51</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>16</initialStateSequence>
+      <finalStateSequence>9</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name>Sim</name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <linkSequence>73</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>28</initialStateSequence>
+      <finalStateSequence>15</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <linkSequence>93</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>92</initialStateSequence>
+      <finalStateSequence>26</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <linkSequence>104</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>17</initialStateSequence>
+      <finalStateSequence>96</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <linkSequence>105</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>11</initialStateSequence>
+      <finalStateSequence>95</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <linkSequence>106</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>16</initialStateSequence>
+      <finalStateSequence>94</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <linkSequence>107</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>8</initialStateSequence>
+      <finalStateSequence>98</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <linkSequence>108</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>18</initialStateSequence>
+      <finalStateSequence>97</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <linkSequence>109</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>18</initialStateSequence>
+      <finalStateSequence>84</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <linkSequence>110</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>8</initialStateSequence>
+      <finalStateSequence>84</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <linkSequence>111</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>11</initialStateSequence>
+      <finalStateSequence>84</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <linkSequence>112</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>17</initialStateSequence>
+      <finalStateSequence>84</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name>Sim</name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <linkSequence>118</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>2</initialStateSequence>
+      <finalStateSequence>117</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <linkSequence>132</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>130</initialStateSequence>
+      <finalStateSequence>28</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <linkSequence>133</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>130</initialStateSequence>
+      <finalStateSequence>84</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <linkSequence>136</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>117</initialStateSequence>
+      <finalStateSequence>135</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <linkSequence>137</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>135</initialStateSequence>
+      <finalStateSequence>6</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <linkSequence>139</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>135</initialStateSequence>
+      <finalStateSequence>138</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <linkSequence>140</linkSequence>
+      </processLinkPK>
+      <actionLabel>1. Retornar a solicitação corrigida</actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>26</initialStateSequence>
+      <finalStateSequence>117</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <linkSequence>142</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>84</initialStateSequence>
+      <finalStateSequence>141</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <linkSequence>143</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>141</initialStateSequence>
+      <finalStateSequence>130</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <linkSequence>144</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>130</initialStateSequence>
+      <finalStateSequence>141</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <linkSequence>145</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>96</initialStateSequence>
+      <finalStateSequence>92</finalStateSequence>
+      <returnLabel></returnLabel>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <linkSequence>146</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>95</initialStateSequence>
+      <finalStateSequence>92</finalStateSequence>
+      <returnLabel></returnLabel>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <linkSequence>147</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>94</initialStateSequence>
+      <finalStateSequence>92</finalStateSequence>
+      <returnLabel></returnLabel>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <linkSequence>148</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>98</initialStateSequence>
+      <finalStateSequence>92</finalStateSequence>
+      <returnLabel></returnLabel>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <linkSequence>149</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>97</initialStateSequence>
+      <finalStateSequence>92</finalStateSequence>
+      <returnLabel></returnLabel>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <linkSequence>150</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>138</initialStateSequence>
+      <finalStateSequence>92</finalStateSequence>
+      <returnLabel></returnLabel>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+  </list>
+  <list/>
+  <list>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>afterTaskComplete</eventId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function afterTaskComplete(colleagueId,nextSequenceId,userList){
+	var atividade = getValue(&quot;WKNumState&quot;);
+	var proxAtividade = getValue(&quot;WKNextState&quot;);
+	var hora = obterDataCorrente();
+	var nome = hAPI.getCardValue(&quot;currentNome&quot;);
+	var numeroRFs = hAPI.getCardValue(&quot;numeroRF&quot;);
+	
+	if(proxAtividade == 3 || proxAtividade == 5 || proxAtividade == 7 || proxAtividade == 9 || proxAtividade == 10){
+		hAPI.setCardValue(&quot;Status&quot;, &quot;Em Aprovação&quot;);
+		hAPI.setCardValue(&quot;ultimoUsuario&quot;, nome);
+		hAPI.setCardValue(&quot;hora&quot;, hora);
+	}
+	if(proxAtividade == 26){
+		hAPI.setCardValue(&quot;Status&quot;, &quot;Reprovado | Correção&quot;);
+		hAPI.setCardValue(&quot;ultimoUsuario&quot;, nome);
+		hAPI.setCardValue(&quot;hora&quot;, hora);
+	}
+	if(proxAtividade == 117){
+		hAPI.setCardValue(&quot;Status&quot;, &quot;Em cotação&quot;);
+		hAPI.setCardValue(&quot;ultimoUsuario&quot;, nome);
+		hAPI.setCardValue(&quot;hora&quot;, hora);
+	}
+	if(proxAtividade == 84){
+		hAPI.setCardValue(&quot;Status&quot;, &quot;Em Compras | Geração da RF&quot;);
+		hAPI.setCardValue(&quot;ultimoUsuario&quot;, nome);
+		hAPI.setCardValue(&quot;hora&quot;, hora);
+	}
+	if(proxAtividade == 28){
+		hAPI.setCardValue(&quot;Status&quot;, &quot;Enviado para faturamento&quot;);
+		hAPI.setCardValue(&quot;ultimoUsuario&quot;, nome);
+		hAPI.setCardValue(&quot;hora&quot;, hora);
+		
+		if (numeroRFs == &quot;&quot;) {
+	        return false;
+	    } else {
+	    	log.info(&quot;### IMPORTANDO ANEXOS DOS PROCESSOS DE RF: &quot; + numeroRFs);
+	    	var numerosRFSplit = numeroRFs.split(&apos;,&apos;);
+	    	log.info(&quot;### numeroRFs LENGTH: &quot; + numerosRFSplit.length);
+	    	for (var i = 0; i &lt; numerosRFSplit.length; i++) {
+		    	var numeroRF = numerosRFSplit[i].trim(); // Remove espaços em branco
+		    	log.info(&quot;### &quot; + numeroRF);
+			    var constraints = [];
+			    constraints.push(DatasetFactory.createConstraint(&quot;processAttachmentPK.processInstanceId&quot;, numeroRF, numeroRF, ConstraintType.MUST));	
+				var dataset = DatasetFactory.getDataset(&quot;processAttachment&quot;, null, constraints, null);	
+				log.info(&quot;### dataset.rowsCount: &quot; + dataset.rowsCount);
+				if(dataset != null &amp;&amp; dataset.rowsCount &gt; 0){
+					for (var j = 0; j &lt; dataset.rowsCount; j++){
+						hAPI.attachDocument(dataset.getValue(j, &apos;documentId&apos;));
+					}
+				} else {
+					log.warn(&quot;### Não há anexos para importar&quot;);
+				}
+		    }
+	    }
+	}
+	if(proxAtividade == 15){
+		hAPI.setCardValue(&quot;Status&quot;, &quot;Despesa reembolsada&quot;);
+		hAPI.setCardValue(&quot;ultimoUsuario&quot;, nome);
+		hAPI.setCardValue(&quot;hora&quot;, hora);
+	}
+	if(proxAtividade == 124){
+		hAPI.setCardValue(&quot;Status&quot;, &quot;Solicitação Cancelada&quot;);
+		hAPI.setCardValue(&quot;ultimoUsuario&quot;, nome);
+		hAPI.setCardValue(&quot;hora&quot;, hora);
+	}
+}</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>afterProcessCreate</eventId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function afterProcessCreate(processId){&#xd;
+	hAPI.setCardValue(&quot;numeroFluxo&quot;, processId);&#xd;
+	hAPI.setCardValue(&quot;dataCriacao&quot;, obterDataCorrente());&#xd;
+	hAPI.setCardValue(&quot;situacao&quot;, &quot;Em aberto&quot;);&#xd;
+	hAPI.setCardValue(&quot;idSolicitacao&quot;, &quot;FDR - &quot; + processId);&#xd;
+}&#xd;
+</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>beforeCancelProcess</eventId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function beforeCancelProcess(colleagueId, processId) {&#xd;
+    log.warn(&quot;#### SOLICITACAO DE CANCELAMENTO DA SOLICITACAO &quot; + processId);&#xd;
+    &#xd;
+    var numeroRF = hAPI.getCardValue(&quot;numeroRF&quot;);&#xd;
+    var statusSolicitacoes = validaStatusRFs(numeroRF);&#xd;
+&#xd;
+    log.info(&quot;#### STATUS DAS SOLICITAÇÕES:&quot;);&#xd;
+    log.dir(statusSolicitacoes);&#xd;
+    &#xd;
+    if (statusSolicitacoes == &quot;noResult&quot;) {&#xd;
+        hAPI.setCardValue(&quot;dataFinalizacao&quot;, obterDataCorrente());&#xd;
+        hAPI.setCardValue(&quot;situacao&quot;, &quot;Cancelado&quot;);&#xd;
+    } else {&#xd;
+        var listaSolicitacoes = statusSolicitacoes.map(function(solicitacao) {&#xd;
+            return &quot;&lt;b&gt;RF:&lt;/b&gt; &quot; + solicitacao.numeroRF + &quot; | &lt;b&gt;Status:&lt;/b&gt; &quot; + (solicitacao.status == &quot;0&quot; ? &quot;Aberto&quot; : &quot;Finalizado&quot;);&#xd;
+        }).join(&quot;&lt;br&gt;&quot;);&#xd;
+        &#xd;
+        throw &quot;&lt;br&gt;&lt;br&gt;&quot; +&#xd;
+              &quot;&lt;b&gt;Não é possível cancelar a solicitação.&lt;/b&gt;&lt;br&gt;&lt;br&gt;&quot; +&#xd;
+              &quot;O processo de RF está vinculado a estas solicitações: &lt;br&gt;&quot; + &#xd;
+              listaSolicitacoes + &quot;&lt;br&gt;&lt;br&gt;&quot; +&#xd;
+              &quot;Favor realizar o cancelamento das solicitações listadas antes de prosseguir.&lt;br&gt;&lt;br&gt;&quot; +&#xd;
+              &quot;Dúvidas? Entre em contato com o departamento de TI.&lt;br&gt;&lt;br&gt;&quot;;&#xd;
+    }&#xd;
+}&#xd;
+&#xd;
+function obterDataCorrente(){&#xd;
+	var dateCorrente = new Date();&#xd;
+	var formatoData = new java.text.SimpleDateFormat(&quot;dd/MM/yyyy HH:mm:ss&quot;);&#xd;
+	return formatoData.format(dateCorrente);&#xd;
+}&#xd;
+&#xd;
+function validaStatusRFs(numeroRFs) {&#xd;
+    log.info(&quot;### INICIO # validaStatusRFs&quot;);&#xd;
+&#xd;
+    var statusSolicitacoes = [];&#xd;
+    &#xd;
+    if (numeroRFs == &quot;&quot;) {&#xd;
+        return &quot;noResult&quot;;&#xd;
+    }&#xd;
+&#xd;
+    var numerosRFSplit = numeroRFs.split(&apos;,&apos;);&#xd;
+    &#xd;
+    for (var i = 0; i &lt; numerosRFSplit.length; i++) {&#xd;
+        var numeroRF = numerosRFSplit[i].trim(); // Remove espaços em branco&#xd;
+        var constraints = [];&#xd;
+        constraints.push(DatasetFactory.createConstraint(&quot;workflowProcessPK.processInstanceId&quot;, numeroRF, numeroRF, ConstraintType.MUST));&#xd;
+        var dataset = DatasetFactory.getDataset(&quot;workflowProcess&quot;, null, constraints, null);&#xd;
+        &#xd;
+        if (dataset != null &amp;&amp; dataset.rowsCount &gt; 0) {&#xd;
+            var status = dataset.getValue(0, &apos;status&apos;);&#xd;
+            if (status == &quot;0&quot; || status == &quot;2&quot;) {&#xd;
+                statusSolicitacoes.push({&#xd;
+                    numeroRF: numeroRF,&#xd;
+                    status: status&#xd;
+                });&#xd;
+            }&#xd;
+        }&#xd;
+    }&#xd;
+    &#xd;
+    if (statusSolicitacoes.length &gt; 0) {&#xd;
+        return statusSolicitacoes;&#xd;
+    } else {&#xd;
+        return &quot;noResult&quot;;&#xd;
+    }&#xd;
+}&#xd;
+&#xd;
+/* CODIGO ANTIGO&#xd;
+	log.warn(&quot;#### SOLICITACAO DE CANCELAMENTO DA SOLICITACAO &quot; + processId);&#xd;
+	&#xd;
+	var numeroRF = hAPI.getCardValue(&quot;numeroRF&quot;);&#xd;
+	var resultado = validaRFCancel(numeroRF);&#xd;
+	log.info(&quot;#### RESULTADO: &quot; + resultado);&#xd;
+	&#xd;
+	if (resultado == 0 || resultado == 2){ //Se a RF não estiver eliminada ou cancelada, não permite cancelar&#xd;
+		throw &quot;&lt;br&gt;&lt;br&gt;&quot; +&#xd;
+		&quot;&lt;b&gt;Não é possível cancelar a solicitação.&lt;/b&gt;&lt;br&gt;&lt;br&gt;&quot; +&#xd;
+		&quot;Processo de RF &lt;b&gt;&quot; + numeroRF + &quot;&lt;/b&gt; vinculada a este processo. Favor realizar o cancelamento antes de prosseguir.&lt;br&gt;&lt;br&gt;&quot; +&#xd;
+		&quot;Dúvidas? Entre em contato com o departamento de TI. &lt;br&gt;&lt;br&gt;&quot;&#xd;
+	} else {&#xd;
+		hAPI.setCardValue(&quot;dataFinalizacao&quot;, obterDataCorrente());&#xd;
+		hAPI.setCardValue(&quot;situacao&quot;, &quot;Cancelado&quot;);	&#xd;
+	}&#xd;
+&#xd;
+function validaRFCancel(numeroRF) {&#xd;
+	log.info(&quot;###INICIO#validaRFCancel&quot;);&#xd;
+	&#xd;
+	if(numeroRF == &quot;&quot;){&#xd;
+		return &quot;noResult&quot;;&#xd;
+	} else {&#xd;
+	    var constraints = [];&#xd;
+	    constraints.push(DatasetFactory.createConstraint(&quot;workflowProcessPK.processInstanceId&quot;, numeroRF, numeroRF, ConstraintType.MUST));	&#xd;
+		var dataset = DatasetFactory.getDataset(&quot;workflowProcess&quot;, null, constraints, null);	&#xd;
+		if(dataset != null &amp;&amp; dataset != undefined &amp;&amp; dataset.rowsCount &gt; 0){&#xd;
+			var status = dataset.getValue(0, &apos;status&apos;);&#xd;
+			return status;&#xd;
+		} else {&#xd;
+			return false&#xd;
+		}&#xd;
+	}&#xd;
+}&#xd;
+*/</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>afterProcessFinish</eventId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function afterProcessFinish(processId){&#xd;
+	hAPI.setCardValue(&quot;dataFinalizacao&quot;, obterDataCorrente());&#xd;
+	hAPI.setCardValue(&quot;situacao&quot;, &quot;Finalizado&quot;);&#xd;
+}&#xd;
+</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>beforeTaskSave</eventId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function beforeTaskSave(colleagueId,nextSequenceId,userList){&#xd;
+    hAPI.setCardValue(&quot;atividadeAtual&quot;, nextSequenceId);&#xd;
+}</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>afterTaskSave</eventId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function afterTaskSave(colleagueId,nextSequenceId,userList){
+    var atividade = getValue(&quot;WKNumState&quot;);
+	var processo = getValue(&quot;WKNumProces&quot;);
+	var usuarioSubstituto = getValue(&quot;WKReplacement&quot;);
+	var matriculaAlcadaSupervisor = hAPI.getCardValue(&quot;aprovadorSupervisor&quot;);
+	var matriculaAlcadaCoordenador = hAPI.getCardValue(&quot;aprovadorCoordenador&quot;);
+	var matriculaAlcadaGerente = hAPI.getCardValue(&quot;aprovadorGerente&quot;);
+	var matriculaAlcadaDiretor = hAPI.getCardValue(&quot;aprovadorDiretor&quot;);
+	var matriculaAprovador = hAPI.getCardValue(&quot;matriculaAprovador&quot;);
+	var supervisor = 3;
+	var coordenador = 5;
+	var coordenador2 = 7;
+	var gerente = 9;
+	var diretor = 10;
+	var diretorFinanceiro = 84;
+	var celulaFiscal = 12;
+	var contasPagar = 28;
+
+    log.info(&quot;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;Matricula Alcada Supervisor&quot;);
+    log.info(matriculaAlcadaSupervisor);
+    log.info(&quot;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;Matricula Alcada Coordenador&quot;);
+    log.info(matriculaAlcadaCoordenador);
+    log.info(&quot;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;Matricula Alcada Gerente&quot;);
+    log.info(matriculaAlcadaGerente);
+    log.info(&quot;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;Matricula Alcada Diretor&quot;);
+    log.info(matriculaAlcadaDiretor);
+    log.info(&quot;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;Matricula Aprovador&quot;);
+    log.info(matriculaAprovador);
+	log.info(&quot;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;Matricula Substituto&quot;);
+    log.info(usuarioSubstituto);
+
+    if (atividade == supervisor){
+		if (matriculaAlcadaSupervisor != matriculaAprovador){
+			var userSubstituto = hAPI.getCardValue(&quot;nomeAprovador&quot;);
+			var aprovacaoCoord = hAPI.getCardValue(&quot;aprovacaoCoordenador&quot;);
+			var statusAprovacao = &quot;&quot;;
+			if (aprovacaoCoord == &quot;Sim&quot;){
+				var statusAprovacao = &quot;aprovou&quot;;
+			}else if (aprovacaoCoord == &quot;Nao&quot;){
+				var statusAprovacao = &quot;reprovou&quot;;
+			}else if (aprovacaoCoord == &quot;Cancelado&quot;){
+				var statusAprovacao = &quot;cancelou&quot;;
+			}
+            var obs = &apos;&lt;p&gt;&lt;u&gt;&lt;span style=&quot;color:#e74c3c;&quot;&gt;&apos;+ userSubstituto +&apos; &apos;+ statusAprovacao +&apos; a solicitação como substituto.&lt;/span&gt;&lt;/u&gt;&lt;/p&gt;&apos;;
+			hAPI.setTaskComments(&quot;admin&quot;, processo,  0, obs);
+		}
+	}
+    
+    if (atividade == coordenador || atividade == coordenador2){        
+		if (matriculaAlcadaCoordenador != matriculaAprovador){
+			var userSubstituto = hAPI.getCardValue(&quot;nomeAprovador&quot;);
+			var aprovacaoCoord = hAPI.getCardValue(&quot;aprovacaoCoordenador&quot;);
+			var statusAprovacao = &quot;&quot;;
+			if (aprovacaoCoord == &quot;Sim&quot;){
+				var statusAprovacao = &quot;aprovou&quot;;
+			}else if (aprovacaoCoord == &quot;Nao&quot;){
+				var statusAprovacao = &quot;reprovou&quot;;
+			}else if (aprovacaoCoord == &quot;Cancelado&quot;){
+				var statusAprovacao = &quot;cancelou&quot;;
+			}
+            var obs = &apos;&lt;p&gt;&lt;u&gt;&lt;span style=&quot;color:#e74c3c;&quot;&gt;&apos;+ userSubstituto +&apos; &apos;+ statusAprovacao +&apos; a solicitação como substituto.&lt;/span&gt;&lt;/u&gt;&lt;/p&gt;&apos;;
+			hAPI.setTaskComments(&quot;admin&quot;, processo,  0, obs);
+		}
+	}
+    
+    if (atividade == gerente){		
+		if (matriculaAlcadaGerente != matriculaAprovador){
+			var userSubstituto = hAPI.getCardValue(&quot;nomeAprovador&quot;);
+			var aprovacaoCoord = hAPI.getCardValue(&quot;aprovacaoCoordenador&quot;);
+			var statusAprovacao = &quot;&quot;;
+			if (aprovacaoCoord == &quot;Sim&quot;){
+				var statusAprovacao = &quot;aprovou&quot;;
+			}else if (aprovacaoCoord == &quot;Nao&quot;){
+				var statusAprovacao = &quot;reprovou&quot;;
+			}else if (aprovacaoCoord == &quot;Cancelado&quot;){
+				var statusAprovacao = &quot;cancelou&quot;;
+			}
+            var obs = &apos;&lt;p&gt;&lt;u&gt;&lt;span style=&quot;color:#e74c3c;&quot;&gt;&apos;+ userSubstituto +&apos; &apos;+ statusAprovacao +&apos; a solicitação como substituto.&lt;/span&gt;&lt;/u&gt;&lt;/p&gt;&apos;;
+			hAPI.setTaskComments(&quot;admin&quot;, processo,  0, obs);
+		}
+	}
+    
+    if (atividade == diretor){		
+		if (matriculaAlcadaDiretor != matriculaAprovador){
+			var userSubstituto = hAPI.getCardValue(&quot;nomeAprovador&quot;);
+			var aprovacaoCoord = hAPI.getCardValue(&quot;aprovacaoCoordenador&quot;);
+			var statusAprovacao = &quot;&quot;;
+			if (aprovacaoCoord == &quot;Sim&quot;){
+				var statusAprovacao = &quot;aprovou&quot;;
+			}else if (aprovacaoCoord == &quot;Nao&quot;){
+				var statusAprovacao = &quot;reprovou&quot;;
+			}else if (aprovacaoCoord == &quot;Cancelado&quot;){
+				var statusAprovacao = &quot;cancelou&quot;;
+			}
+            var obs = &apos;&lt;p&gt;&lt;u&gt;&lt;span style=&quot;color:#e74c3c;&quot;&gt;&apos;+ userSubstituto +&apos; &apos;+ statusAprovacao +&apos; a solicitação como substituto.&lt;/span&gt;&lt;/u&gt;&lt;/p&gt;&apos;;
+			hAPI.setTaskComments(&quot;admin&quot;, processo,  0, obs);
+		}
+	}
+    
+    if (atividade == diretorFinanceiro){
+		if (usuarioSubstituto != &quot;&quot; || usuarioSubstituto != null){
+			var userSubstituto = hAPI.getCardValue(&quot;nomeAprovador&quot;);
+			var aprovacaoCoord = hAPI.getCardValue(&quot;aprovacaoCoordenador&quot;);
+			var statusAprovacao = &quot;&quot;;
+			if (aprovacaoCoord == &quot;Sim&quot;){
+				var statusAprovacao = &quot;aprovou&quot;;
+			}else if (aprovacaoCoord == &quot;Nao&quot;){
+				var statusAprovacao = &quot;reprovou&quot;;
+			}else if (aprovacaoCoord == &quot;Cancelado&quot;){
+				var statusAprovacao = &quot;cancelou&quot;;
+			}
+            var obs = &apos;&lt;p&gt;&lt;u&gt;&lt;span style=&quot;color:#e74c3c;&quot;&gt;&apos;+ userSubstituto +&apos; &apos;+ statusAprovacao +&apos; a solicitação como substituto.&lt;/span&gt;&lt;/u&gt;&lt;/p&gt;&apos;;
+			hAPI.setTaskComments(&quot;admin&quot;, processo, 0, obs);
+		}
+	}
+}</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>funcoesUteis</eventId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function currencyToNumber(numero){&#xd;
+	if(numero != null &amp;&amp; numero != undefined &amp;&amp; numero != &apos;&apos;){&#xd;
+        return parseFloat(numero.replace(&quot;.&quot;,&quot;&quot;).replace(&quot;,&quot;,&quot;.&quot;));&#xd;
+	}else{&#xd;
+		return 0&#xd;
+	}&#xd;
+}&#xd;
+&#xd;
+function numberToCurrency(numero) {&#xd;
+    var numero = parseFloat(numero).toFixed(2).split(&apos;.&apos;);&#xd;
+    numero[0] = numero[0].split(/(?=(?:...)*$)/).join(&apos;.&apos;);&#xd;
+    return numero.join(&apos;,&apos;);&#xd;
+}&#xd;
+&#xd;
+function obterDataCorrente(){&#xd;
+	var dateCorrente = new Date();&#xd;
+	var formatoData = new java.text.SimpleDateFormat(&quot;dd/MM/yyyy HH:mm:ss&quot;);&#xd;
+	return formatoData.format(dateCorrente);&#xd;
+}</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>intermediateconditional141</eventId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function intermediateconditional141() {
+	log.info(&quot;###### intermediateconditional141() INICIO&quot;);
+	
+	var processo = getValue(&quot;WKNumProces&quot;);
+    var numeroRF = hAPI.getCardValue(&quot;numeroRF&quot;);
+    var resultado = validaStatusRF(); // Chama a função de validação
+    log.info(&quot;### RESULTADO DETALHADO ###&quot;);
+    log.dir(resultado);
+
+    var todasFinalizadas = true;
+    var algumaCancelada = false;
+    var algumaAberta = false;
+    var algumaNaoEncontrada = false;
+
+    // Avalia o resultado detalhado e aplica comentários individuais
+    for (var i = 0; i &lt; resultado.length; i++) {
+        var item = resultado[i];
+        var numero = item.numeroRF;
+        var status = item.status;
+        
+        if (status == &quot;noResult&quot;) {
+        	log.info(&quot;#### &quot; + numero + &quot; &quot; + &quot;noResult&quot;);
+            algumaNaoEncontrada = true;
+            hAPI.setTaskComments(&quot;admin&quot;, processo, 0, &apos;&lt;p&gt;&lt;u&gt;&lt;span style=&quot;color:#e74c3c;&quot;&gt;RF &apos; + numero + &apos; NÃO ENCONTRADA.&lt;/span&gt;&lt;/u&gt;&lt;/p&gt;&apos;);
+        } else if (status == &quot;1&quot;) {
+        	log.info(&quot;#### &quot; + numero + &quot; &quot; + &quot;1&quot;);
+            algumaCancelada = true;
+            hAPI.setTaskComments(&quot;admin&quot;, processo, 0, &apos;&lt;p&gt;&lt;u&gt;&lt;span style=&quot;color:#e74c3c;&quot;&gt;RF &apos; + numero + &apos; CANCELADA.&lt;/span&gt;&lt;/u&gt;&lt;/p&gt;&apos;);
+        } else if (status != &quot;2&quot;) {
+        	log.info(&quot;#### &quot; + numero + &quot; &quot; + &quot;!= 2&quot;);
+            algumaAberta = true;
+            todasFinalizadas = false;
+        }
+    }
+    
+    log.info(&quot;### RESULTADOS CONDICIONAL: &quot;);
+    log.info(&quot;### algumaNaoEncontrada: &quot; + algumaNaoEncontrada);
+    log.info(&quot;### algumaAberta: &quot; + algumaAberta);
+    log.info(&quot;### algumaCancelada: &quot; + algumaCancelada);
+    log.info(&quot;### todasFinalizadas: &quot; + todasFinalizadas);
+
+    // Determina o retorno com base nos flags
+    if (algumaNaoEncontrada || algumaCancelada) {
+        return true;
+    } else if (algumaAberta) {
+        return false;
+    } else if (todasFinalizadas) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+
+function validaStatusRF() {
+    log.info(&quot;###INICIO#validaStatusRF()&quot;);
+    
+    var numeroRF = hAPI.getCardValue(&quot;numeroRF&quot;);
+    var statusDetalhado = []; // Array para armazenar o número e status de cada solicitação
+    
+    if (numeroRF === &quot;&quot;) {
+        return statusDetalhado; // Retorna um array vazio se não houver números de solicitação
+    } else {
+        var numerosRFSplit = numeroRF.split(&apos;,&apos;);
+        
+        for (var i = 0; i &lt; numerosRFSplit.length; i++) {
+        	var numeroRF = numerosRFSplit[i].trim(); // Remove espaços em branco
+            var constraints = [];
+            constraints.push(DatasetFactory.createConstraint(&quot;workflowProcessPK.processInstanceId&quot;, numeroRF, numeroRF, ConstraintType.MUST));    
+            var dataset = DatasetFactory.getDataset(&quot;workflowProcess&quot;, null, constraints, null);
+            log.info(dataset);
+            
+            var status;
+            if (dataset == null || dataset.rowsCount &lt; 1) {
+                status = &quot;noResult&quot;;
+            } else if (dataset.rowsCount &gt; 0) {
+                status = dataset.getValue(0, &apos;status&apos;);
+            } else {
+                status = &quot;null&quot;;
+            }
+            
+            // Adiciona um objeto ao array com o número da solicitação e o status
+            statusDetalhado.push({
+                numeroRF: numerosRFSplit[i],
+                status: status
+            });
+        }
+        
+        return statusDetalhado;
+    }
+}
+
+function validaStatusGateway(){
+    log.info(&quot;### INICIO # validaStatusGateway()&quot;);
+    
+    var statusDetalhado = validaStatusRF();
+    var algumaNaoEncontrada = false;
+    var algumaAberta = false;
+    var temSolicitacaoCancelada = false;
+    var todasFinalizadas = true;
+    
+    
+    for (var i = 0; i &lt; statusDetalhado.length; i++) {
+        var item = statusDetalhado[i];
+        var status = item.status;
+        
+        if (status == &quot;noResult&quot;) {
+            algumaNaoEncontrada = true;
+        } else if (status == &quot;1&quot;) {
+            temSolicitacaoCancelada = true;
+            todasFinalizadas = false;
+        } else if (status == &quot;0&quot;) {
+            algumaAberta = true;
+            todasFinalizadas = false;
+        }
+    }
+    
+    log.info(&quot;### RESULTADOS GATEWAY: &quot;);
+    log.info(&quot;### algumaNaoEncontrada: &quot; + algumaNaoEncontrada);
+    log.info(&quot;### algumaAberta: &quot; + algumaAberta);
+    log.info(&quot;### temSolicitacaoCancelada: &quot; + temSolicitacaoCancelada);
+    log.info(&quot;### todasFinalizadas: &quot; + todasFinalizadas);
+    
+    if (todasFinalizadas) {
+    	log.info(&quot;### todasFinalizadas - 2&quot;);
+        return 2; // Todas as solicitações estão finalizadas
+    } else if (algumaNaoEncontrada) {
+    	log.info(&quot;### todasFinalizadas - noResult&quot;);
+        return &quot;noResult&quot;; // Há solicitações não existentes
+    } else if (temSolicitacaoCancelada) {
+    	log.info(&quot;### temSolicitacaoCancelada - 1&quot;);
+        return 1; // Há solicitações canceladas
+    } else {
+    	return false;
+    }
+}
+
+
+/* CODIGO ANTIGO
+	var constraints = [];
+	constraints.push(DatasetFactory.createConstraint(&quot;workflowProcessPK.processInstanceId&quot;, numeroRF, numeroRF, ConstraintType.MUST));	
+	var dataset = DatasetFactory.getDataset(&quot;workflowProcess&quot;, null, constraints, null);
+	log.info(dataset);
+	if(dataset == null || dataset.rowsCount &lt; 1 || dataset == undefined){
+		return &quot;noResult&quot;;
+	} else if(dataset.rowsCount &gt; 0){
+		var status = dataset.getValue(0, &apos;status&apos;);
+		return status;
+	} else {
+		return &quot;null&quot;;
+	}
+	
+	if(resultado == &quot;0&quot;){
+		return;
+	} else if(resultado == &quot;1&quot;){
+		hAPI.setTaskComments(&quot;admin&quot;, processo, 0, &apos;&lt;p&gt;&lt;u&gt;&lt;span style=&quot;color:#e74c3c;&quot;&gt;RF &apos; + numeroRF + &apos; CANCELADA. Favor iniciar uma nova RF.&lt;/span&gt;&lt;/u&gt;&lt;/p&gt;&apos;);
+		return true;
+	} else if(resultado == &quot;2&quot;){
+		return true;
+	} else if(resultado == &quot;noResult&quot;){
+		hAPI.setTaskComments(&quot;admin&quot;, processo, 0, &apos;&lt;p&gt;&lt;u&gt;&lt;span style=&quot;color:#e74c3c;&quot;&gt;RF &apos; + numeroRF + &apos; NÃO ENCONTRADA. Favor iniciar uma nova RF.&lt;/span&gt;&lt;/u&gt;&lt;/p&gt;&apos;);
+		return true;
+	} else {
+		return;
+	}
+*/</eventDescription>
+    </WorkflowProcessEvent>
+  </list>
+  <list/>
+  <list>
+    <SwimLane>
+      <color>FFFFFF</color>
+      <height>1008</height>
+      <width>1541</width>
+      <positionX>10</positionX>
+      <positionY>3</positionY>
+      <stateName>FDR - Faturamento de despesas reembolsáveis</stateName>
+      <type>1</type>
+      <parentSequence>0</parentSequence>
+      <swimLanePK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <sequence>1</sequence>
+      </swimLanePK>
+    </SwimLane>
+    <SwimLane>
+      <color>FFFFFF</color>
+      <height>201</height>
+      <width>1511</width>
+      <positionX>40</positionX>
+      <positionY>3</positionY>
+      <stateName>Solicitante</stateName>
+      <type>2</type>
+      <parentSequence>1</parentSequence>
+      <swimLanePK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <sequence>2</sequence>
+      </swimLanePK>
+    </SwimLane>
+    <SwimLane>
+      <color>FFFFFF</color>
+      <height>201</height>
+      <width>1511</width>
+      <positionX>40</positionX>
+      <positionY>204</positionY>
+      <stateName>Aprovadores</stateName>
+      <type>2</type>
+      <parentSequence>1</parentSequence>
+      <swimLanePK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <sequence>3</sequence>
+      </swimLanePK>
+    </SwimLane>
+    <SwimLane>
+      <color>FFFFFF</color>
+      <height>204</height>
+      <width>1511</width>
+      <positionX>40</positionX>
+      <positionY>807</positionY>
+      <stateName>Financeiro</stateName>
+      <type>2</type>
+      <parentSequence>1</parentSequence>
+      <swimLanePK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <sequence>4</sequence>
+      </swimLanePK>
+    </SwimLane>
+    <SwimLane>
+      <color>FFFFFF</color>
+      <height>201</height>
+      <width>1511</width>
+      <positionX>40</positionX>
+      <positionY>405</positionY>
+      <stateName>Aprovadores</stateName>
+      <type>2</type>
+      <parentSequence>1</parentSequence>
+      <swimLanePK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <sequence>5</sequence>
+      </swimLanePK>
+    </SwimLane>
+    <SwimLane>
+      <color>FFFFFF</color>
+      <height>201</height>
+      <width>1511</width>
+      <positionX>40</positionX>
+      <positionY>606</positionY>
+      <stateName>Suprimentos</stateName>
+      <type>2</type>
+      <parentSequence>1</parentSequence>
+      <swimLanePK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <sequence>6</sequence>
+      </swimLanePK>
+    </SwimLane>
+  </list>
+  <list>
+    <ProcessComponGraf>
+      <componType>1</componType>
+      <positionX>170</positionX>
+      <positionY>10</positionY>
+      <processComponGrafPK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <componGrafSequence>120</componGrafSequence>
+      </processComponGrafPK>
+      <stateName>Gestão de Clientes</stateName>
+    </ProcessComponGraf>
+  </list>
+  <list>
+    <ProcessLinkAssoc>
+      <processLinkAssocPK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>1</version>
+        <linkSequence>121</linkSequence>
+      </processLinkAssocPK>
+      <initialStateSequence>120</initialStateSequence>
+      <finalStateSequence>2</finalStateSequence>
+    </ProcessLinkAssoc>
+  </list>
+  <list>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>68</version>
+        <linkSequence>110</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>549</positionX>
+      <positionY>708</positionY>
+    </ProcessLinkBend>
+  </list>
+  <list>
+    <ProcessStateTrigger>
+      <processStateTriggerPK>
+        <companyId>1</companyId>
+        <processId>procFaturamentoDespesasReembolsaveis</processId>
+        <version>68</version>
+        <stateSequence>141</stateSequence>
+        <triggerSequence>0</triggerSequence>
+      </processStateTriggerPK>
+      <runType>0</runType>
+      <type>3</type>
+      <value>procFaturamentoDespesasReembolsaveis.intermediateconditional141.js</value>
+      <timeTrigger>0:0:0</timeTrigger>
+      <frequencia>01</frequencia>
+    </ProcessStateTrigger>
+  </list>
+  <list/>
+  <list/>
+  <list/>
+  <list/>
+  <list/>
+  <list/>
+  <list/>
+</list>
