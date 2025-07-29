@@ -31,7 +31,7 @@
       <version>4</version>
     </processDefinitionVersionPK>
     <versionDescription></versionDescription>
-    <formId>34</formId>
+    <formId>0</formId>
     <editionMode>true</editionMode>
     <updateAttachmentsVersion>false</updateAttachmentsVersion>
     <controlsAttachmentsSecurity>false</controlsAttachmentsSecurity>
@@ -595,7 +595,7 @@
 	
 	log.info(&quot;#### afterTaskComplete &quot; + processId + &quot; atividadeAtual: &quot; + atividadeAtual + &quot; proximaAtividade: &quot; + proximaAtividade);
 	
-	if(proximAtividade == 9){ //End
+	if(proximAtividade == &quot;XXX&quot;){
 		//INSERE HISTORICO APROVACAO
 		addDadosHistorico(&quot;DESCRICAO APROVACAO&quot;, hAPI.getCardValue(&quot;currentNome&quot;), hAPI.getCardValue(&quot;CAMPO_APROVACAO&quot;), hAPI.getCardValue(&quot;CAMPO_OBS_APROVADOR&quot;));
 	
@@ -621,6 +621,8 @@
         <version>1</version>
       </workflowProcessEventPK>
       <eventDescription>function afterProcessCreate(processId){&#xd;
+	log.warn(&quot;#### ABERTURA DA SOLICITACAO &quot; + processId);&#xd;
+	&#xd;
 	var campoDescritor = &#xd;
 		&quot;CAMPO1: &quot; 	+ hAPI.getCardValue(&quot;CAMPO1&quot;) + &quot;\n&quot;+&#xd;
 		&quot;CAMPO2: &quot;  + hAPI.getCardValue(&quot;CAMPO2&quot;) + &quot;\n&quot;+&#xd;
@@ -628,7 +630,7 @@
 	&#xd;
 	hAPI.setCardValue(&quot;campoDescritor&quot;, campoDescritor); //Campo descritor customizado para o processo&#xd;
 	hAPI.setCardValue(&quot;numeroFluxo&quot;, processId);&#xd;
-	hAPI.setCardValue(&quot;situacao&quot;, &quot;Em aberto&quot;);&#xd;
+	hAPI.setCardValue(&quot;situacao&quot;, &quot;EM ABERTO&quot;);&#xd;
 }&#xd;
 </eventDescription>
     </WorkflowProcessEvent>
@@ -640,9 +642,9 @@
         <version>1</version>
       </workflowProcessEventPK>
       <eventDescription>function beforeCancelProcess(colleagueId, processId) {&#xd;
-    log.warn(&quot;#### SOLICITACAO DE CANCELAMENTO DA SOLICITACAO &quot; + processId);&#xd;
+    log.warn(&quot;#### CANCELAMENTO DA SOLICITACAO &quot; + processId);&#xd;
     hAPI.setCardValue(&quot;dataFinalizacao&quot;, obterDataCorrente());&#xd;
-    hAPI.setCardValue(&quot;situacao&quot;, &quot;Cancelado&quot;);&#xd;
+    hAPI.setCardValue(&quot;situacao&quot;, &quot;CANCELADO&quot;);&#xd;
 }</eventDescription>
     </WorkflowProcessEvent>
     <WorkflowProcessEvent>
@@ -698,8 +700,9 @@
       </workflowProcessEventPK>
       <eventDescription>function afterProcessFinish(processId){&#xd;
 	log.warn(&quot;#### FINALIZACAO DA SOLICITACAO &quot; + processId);&#xd;
+	&#xd;
 	hAPI.setCardValue(&quot;dataFinalizacao&quot;, obterDataCorrente());&#xd;
-	hAPI.setCardValue(&quot;situacao&quot;, &quot;Finalizado&quot;);&#xd;
+	hAPI.setCardValue(&quot;situacao&quot;, &quot;FINALIZADO&quot;);&#xd;
 }&#xd;
 </eventDescription>
     </WorkflowProcessEvent>
@@ -719,15 +722,12 @@
 	log.info(&quot;#### beforeTaskSave &quot; + processId + &quot; Atividade: &quot; + atividadeAtual + &quot; proximaAtividade: &quot; + proximaAtividade + &quot; mudandoAtividade: &quot; + mudandoAtividade);&#xd;
     &#xd;
     //Exemplo Anexo obrigatório na atividade&#xd;
-    if(proximaAtividade == 5 &amp;&amp; mudandoAtividade){&#xd;
+    if(mudandoAtividade &amp;&amp; proximaAtividade == &quot;XXX&quot;){&#xd;
     	var qtdAnexos = hAPI.listAttachments();&#xd;
 		if(qtdAnexos.size() == 0){&#xd;
 			exibirMensagem(&quot;Favor, inserir pelo menos &lt;b&gt;1 anexo&lt;/b&gt; para prosseguir.&quot;);&#xd;
 		}&#xd;
     }&#xd;
-    &#xd;
-    //Passou por todas as validações, preenche a atividadeAtual&#xd;
-    hAPI.setCardValue(&quot;atividadeAtual&quot;, proximaAtividade);&#xd;
 }</eventDescription>
     </WorkflowProcessEvent>
     <WorkflowProcessEvent>

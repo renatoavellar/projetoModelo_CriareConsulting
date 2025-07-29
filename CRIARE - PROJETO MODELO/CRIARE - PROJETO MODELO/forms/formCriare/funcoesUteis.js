@@ -318,7 +318,7 @@ function preencheAcompanhamento() {
 			'<div class="panel-body fs-sm-space media clearfix">' +
 			'<a class="pull-left" href="#">' +
 			'<div>' +
-			'<img src="/social/api/rest/social/image/profile/' + $("#currentLogin").val() + '/SMALL_PICTURE" alt="" class="fluig-style-guide thumb-profile img-rounded thumb-profile-sm thumb-profile-sm-legacy" social="" api="" rest="" image="" profile="" rodrigo="">' +
+			'<img src="/social/api/rest/social/image/profile/' + $("#currentLogin").val() + '/SMALL_PICTURE" alt="" class="fluig-style-guide thumb-profile img-rounded thumb-profile-sm thumb-profile-sm-legacy" social="" api="" rest="" image="" profile="">' +
 			'</div>' +
 			'</a >' +
 			' <div class="media-body">' +

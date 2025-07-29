@@ -20,6 +20,7 @@ function displayFields(form, customHTML){
 	form.setValue("currentMatricula", currentUser.getCode());
 
 	if(MODE == "ADD"){ //SOLICITANTE
+		form.setValue("solicitanteLogin", currentUser.getLogin());
 		form.setValue("solicitanteMatricula", currentUser.getCode());
 		form.setValue("solicitanteNome", currentUser.getFullName());
 		form.setValue("solicitanteEmail", currentUser.getEmail());

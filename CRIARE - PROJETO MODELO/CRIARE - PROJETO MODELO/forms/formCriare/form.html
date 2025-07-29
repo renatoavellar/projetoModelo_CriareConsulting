@@ -1,12 +1,12 @@
 <html>
 	<head>
 		<link type="text/css" rel="stylesheet" href="/style-guide/css/fluig-style-guide.min.css"/>
+		<link type="text/css" rel="stylesheet" href="style.css"/>
 		<script type="text/javascript" src="/portal/resources/js/jquery/jquery.js"></script>
 		<script type="text/javascript" src="/portal/resources/js/jquery/jquery-ui.min.js"></script>
 		<script type="text/javascript" src="/portal/resources/js/mustache/mustache-min.js"></script>
 		<script type="text/javascript" src="/style-guide/js/fluig-style-guide.min.js" charset="utf-8"></script>
 		<script src="/webdesk/vcXMLRPC.js"></script>
-		<link type="text/css" rel="stylesheet" href="style.css"/>
 		<script type="text/javascript" src="attach.js" charset="utf-8"></script>
 		<script type="text/javascript" src="main.js" charset="utf-8"></script>
 		<script type="text/javascript" src="funcoesUteis.js" charset="utf-8"></script>
@@ -17,6 +17,7 @@
 			<form name="form" role="form">
 				<!-- [Inicio] campos de controle -->
 				<input type="hidden" id="numeroFluxo" name="numeroFluxo" value="" />
+				<input type="hidden" id="solicitanteLogin" name="solicitanteLogin" value="" />
 				<input type="hidden" id="solicitanteMatricula" name="solicitanteMatricula" value="" />
 				<input type="hidden" id="solicitanteNome" name="solicitanteNome" value="" />
 				<input type="hidden" id="solicitanteEmail" name="solicitanteEmail" value="" />
@@ -319,7 +320,7 @@
 							<textarea class="form-control" name="destino" id="destino"	style="height: 200px; vertical-align: top; width: 100%; display:none;" value="" readonly></textarea>												
 						</div>
 					</div>
-					<page-footer>Desenvolvido por: Criare Consulting [λ]</page-footer>
+					<page-footer>Desenvolvido por: Criare consulting λ</page-footer>
 				</div>
 			</form>
 		</div>
@@ -337,7 +338,19 @@
 						<table>
 							<tbody>
 								<tr>
-									<td class="color-grey" rowspan="7"> &nbsp; <i class="flaticon flaticon-account-circle icon-thumbnail-lg"></i> &nbsp; </td>
+									<td class="color-grey" rowspan="7" style="padding-right: 10px;">
+										<img src="/collaboration/api/v3/users/{{solicitanteLogin}}/picture?type=SMALL_PICTURE" 
+											class="thumb-profile-md" 
+											style="
+												width: 50px;
+												height: 50px;
+												border-radius: 50%;
+												border: 0px solid #fff;
+												box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+												object-fit: cover;
+												margin-top: 55px;
+											">
+									</td>
 								</tr>
 								<tr>
 									<td class="color-grey"> <b>Solicitação:</b> {{numeroFluxo}} </td>

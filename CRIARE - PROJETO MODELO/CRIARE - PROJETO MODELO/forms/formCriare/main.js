@@ -8,9 +8,11 @@ $(document).ready(function() {
 	//HEADER
 	$("#PanelDadosUser").append(
 		Mustache.render($("#tpl-panel-user").html(),{
+			solicitanteLogin: $('#solicitanteLogin').val(), 
 			numeroFluxo: $('#numeroFluxo').val(), 
 			nome: $('#solicitanteNome').val(), 
-			email: $('#solicitanteEmail').val(), 
+			email: $('#solicitanteEmail').val(),
+			departamento: $('#solicitanteDepartamento').val(), 
 			dataInicio: $("#dataInicio").val() 
 		})
 	);
