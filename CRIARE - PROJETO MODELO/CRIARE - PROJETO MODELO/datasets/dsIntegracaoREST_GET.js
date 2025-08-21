@@ -7,7 +7,7 @@ function createDataset(fields, constraints, sortFields) {
 	
 	// Exemplo de parâmetro
 	// var PARAMETRO_1 = obterParametro(constraints, "PARAMETRO_1"); 
-	// if (!PARAMETRO_1) throw "PARAMETRO_1 não informado.";
+	// if (PARAMETRO_1 == "") throw "PARAMETRO_1 não informado.";
 
 	var clientService = fluigAPI.getAuthorizeClientService();
 	var data = {
@@ -23,12 +23,12 @@ function createDataset(fields, constraints, sortFields) {
 	
 	try {
 		var vo = clientService.invoke(JSON.stringify(data));
-		log.dir("##### VARIAVELVO " + vo);
-		var resultado = JSON.parse(vo.getResult());
-
-		if (resultado && resultado.length > 0) {
-			for (var i = 0; i < resultado.length; i++) {
-				var item = resultado[i];
+		log.info("##### VARIAVELVO ")
+		log.dir(vo);
+		
+		var resultado = JSON.parse(vo.getResult()); //se houver algum objeto antes do array (ex: JSON.parse(vo.getResult()).items);
+		if (resultado) {
+			for each(item in resultado){
 				dataset.addRow([
 					item.codigo || "",
 					item.empresa || ""
@@ -45,12 +45,11 @@ function createDataset(fields, constraints, sortFields) {
 	return dataset;
 }
 
-function obterParametro(constraints, campo) {
+function obterParametro(constraints, campo){
 	var valor = "";
-	if (constraints && constraints.length > 0) {
-		for (var i = 0; i < constraints.length; i++) {
-			var con = constraints[i];
-			if (con.getFieldName().trim().toUpperCase() === campo.trim().toUpperCase()) {
+	if ((constraints != null) && (constraints.length > 0)) {
+		for each(con in constraints) {
+			if (con.getFieldName().trim().toUpperCase() == campo.trim().toUpperCase()) {
 				valor = con.getInitialValue();
 				break;
 			}
