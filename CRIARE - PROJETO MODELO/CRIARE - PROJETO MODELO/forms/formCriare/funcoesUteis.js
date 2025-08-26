@@ -522,8 +522,23 @@ function acessarSolicitacao(v){
 }
 
 /*
- * Redimenciona automaticamente os <textarea> de acordo com a quantidade de linhas digitadas 
+ * Função para remover acentos de uma string
+ * Parâmetro(texto): string
 */
-function configureTextAreas() {
+function removerAcentos(texto) {
+	  return texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+}
+
+/*
+ * Redimensiona todas as <textarea> de acordo com a qtd de linhas usadas
+ * Chamada : redimensionarTextArea();
+*/
+function redimensionarTextArea() {
     $('textarea').each(resizeTextArea).on('input change', resizeTextArea).trigger('input');
+}
+function resizeTextArea() {
+    this.rows = 2;
+    while (this.scrollHeight > this.offsetHeight) {
+        this.rows += 1;
+    }
 }

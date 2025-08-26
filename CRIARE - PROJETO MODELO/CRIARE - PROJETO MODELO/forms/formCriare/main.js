@@ -45,6 +45,9 @@ $(document).ready(function() {
 	//Zoom
 	validaZoom();
 	
+	//Textarea
+	redimensionarTextArea();
+	
 	//Calcular total
 	$(document).on('blur', '.calcularTotal , .fluigicon-trash', function () {
 		calcularTotal();
